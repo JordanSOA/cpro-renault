@@ -32,8 +32,8 @@ En cas de problème, n'hésitez pas à solliciter mon aide.
 
 ### Exercices
 
-* [Exemples](./00%20-%20Exemples/exemple-00)
-* [Observables génériques](./01%20-%20Observables%20génériques)
+* (__NEW__ !) [Exemples](./00%20-%20Exemples/exemple-00)
+* (__NEW__ !) [Observables génériques](./01%20-%20Observables%20génériques)
 * [Opérateurs de création](./02%20-%20Opérateurs%20de%20création)
 * [Opérateurs de jointure](./03%20-%20Opérateurs%20de%20jointure)
 * [Opérateurs de transformation](./04%20-%20Opérateurs%20de%20transformation)

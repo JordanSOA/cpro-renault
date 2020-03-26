@@ -53,7 +53,7 @@
 
 ### (__NEW__ !) [Module AJAX](./module-ajax)
 
-*(En Cours..)* __Février 2020, Mars 2020, ...__
+*(En Cours...)* __Février 2020, Mars 2020, ...__
 
 * Comprendre le principe de la méthode AJA(x);
 * Savoir utiliser les API natives pour effectuer des requêtes HTTP asynchrones;
@@ -63,9 +63,9 @@
 
 ---
 
-### [Module RxJS](./module-rxjs)
+### (__NEW__ !) [Module RxJS](./module-rxjs)
 
-*(Prochainement)* __Mars 2020, Avril 2020, ...__
+*(En Cours...)* __Mars 2020, Avril 2020, ...__
 
 * Comprendre le design pattern Observable et savoir lire un *Marble Diagram*;
 * Savoir utiliser le framework RxJS pour créer des Observables et des Observers;

@@ -1,4 +1,4 @@
-# Exercice 02 Utiliser la "classe" ReplaySubject et BehaviorSubject
+# Exercice 02 : Utiliser la "classe" ReplaySubject et BehaviorSubject
 
 ---
 
