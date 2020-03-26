@@ -4,14 +4,10 @@
 
 [RxJS](https://rxjs-dev.firebaseapp.com/) est une librairie pour faire de la [programmation reactive](https://fr.wikipedia.org/wiki/Programmation_r%C3%A9active) basée sur le [design pattern Observer](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript).
 
-Nous allons utliser RxJS en ES6+ pour s'exercer à la programmation réactive.
-
-Pour utiliser RxJS, il faut d'abord le __télécharger__ puis l'utiliser comme un __module ES6+__.
-
-Pour pouvoir utiliser RxJS comme un __module ES6+__ nous allons utiliser un *bundler* : [webpack](https://webpack.js.org/) et pour faciliter la réalisation des exercices, nous utiliserons le [serveur de développement fourni par webpack](https://webpack.js.org/configuration/dev-server/).
-
+Nous allons utiliser RxJS en ES6+ pour nous exercer à la programmation réactive. Il faut le __télécharger__ puis l'utiliser comme un __module ES6+__. Pour pouvoir utiliser RxJS comme un __module ES6+__ nous devons utiliser un *bundler* : [webpack](https://webpack.js.org/). Pour faciliter la réalisation des exercices, nous utiliserons le [serveur de développement fourni par webpack](https://webpack.js.org/configuration/dev-server/).
 
 Pour initialiser votre dossier de travail :
+
 * A la racine de ce dossier se trouve un fichier [package.json](./package.json). Ce fichier contient toutes les dépendances citées précédemment. Utilisez votre terminal pour vous positionner à la racine de votre dossier de travail et utilisez `npm i` ou `npm install` pour installer les dépendences (`rxjs`, `webpack`, `webpack-cli`, `webpack-dev-server`).
 
 * Vérifiez que vous avez, à la racine de votre dossier de travail, un dossier `node_modules` qui contient les dépendances requises pour travailler.
@@ -28,7 +24,7 @@ Pour initialiser votre dossier de travail :
 
 ### Exemple :
 
-Pour valider, vérifier et observer le fonctionnement de RxJS, vous pouvez consulter l'[exemple](./00%20-%20Exemples/exemple-00/README.md) fourni.
+Pour valider, vérifier et observer le fonctionnement de RxJS, vous pouvez consulter l'[exemple](./00%20-%20Exemples/exemple-00) fourni.
 
 Pensez à vous positionner, à l'aide de votre terminal, à la racine du dossier [exemple-00](./00%20-%20Exemples/exemple-00) et à démarrer le serveur de développement de webpack à l'aide de `npm start` pour tester l'exemple.
 
@@ -36,14 +32,14 @@ En cas de problème, n'hésitez pas à solliciter mon aide.
 
 ### Exercices
 
-* [Exemples](./00%20-%20Exemples/exemple-00/README.md)
-* [Observables génériques](./01-%20Observables%20génériques/README.md)
-* [Opérateurs de création](./02%20-%20Opérateurs%20de%20création/README.md)
-* [Opérateurs de jointure](./03%20-%20Opérateurs%20de%20jointure/README.md)
-* [Opérateurs de transformation](./04%20-%20Opérateurs%20de%20transformation/README.md)
-* [Opérateurs de filtrage](./05%20-%20Opérateurs%20de%20filtrage/README.md)
-* [Opérateurs multicanaux](./06%20-%20Opérateurs%20multicanaux/README.md)
-* [Opérateurs utilitaires et autres](./07%20-%20Opérateurs%20utilitaires%20et%20autres/README.md)
+* [Exemples](./00%20-%20Exemples/exemple-00)
+* [Observables génériques](./01%20-%20Observables%20génériques)
+* [Opérateurs de création](./02%20-%20Opérateurs%20de%20création)
+* [Opérateurs de jointure](./03%20-%20Opérateurs%20de%20jointure)
+* [Opérateurs de transformation](./04%20-%20Opérateurs%20de%20transformation)
+* [Opérateurs de filtrage](./05%20-%20Opérateurs%20de%20filtrage)
+* [Opérateurs multicanaux](./06%20-%20Opérateurs%20multicanaux)
+* [Opérateurs utilitaires et autres](./07%20-%20Opérateurs%20utilitaires%20et%20autres)
 * Observables pour faire de l'AJAX : __Voir module AJAX__
 
 ---
