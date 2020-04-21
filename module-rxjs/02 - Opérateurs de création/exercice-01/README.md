@@ -4,7 +4,7 @@
 
 ## Présentation
 
-Vous allez travailler avec l'Opérateur de Création `from` qui permet de créer un *Observable* à partir :
+Vous allez travailler avec l'*Opérateur de création* `from` qui permet de créer un *Observable* à partir :
 - d'un Array;
 - d'un objet comparable à un Array, par exemple une Collection d'objets;
 - d'une Promesse;
