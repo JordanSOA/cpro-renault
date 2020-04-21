@@ -23,9 +23,9 @@ Pour savoir comment utiliser ces fonctions vous pouvez vous référer à :
 Les exercices suivants visent à expérimenter certains __Opérateurs de Transformation__
 qui sont des __*Pipeable Operators*__.
 
-* [Exercice 1](./exercice-01) : Utiliser l'__Opérateur de Transformation__ `map`.
+* (__A Venir__) [Exercice 1](./exercice-01) : Utiliser l'__Opérateur de Transformation__ `map`.
 
-* [Exercice 2](./exercice-02) : Utiliser l'__Opérateur de Transformation__ `pluck`.
+* (__A Venir__) [Exercice 2](./exercice-02) : Utiliser l'__Opérateur de Transformation__ `pluck`.
 
 ---
 

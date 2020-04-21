@@ -23,7 +23,7 @@ Pour savoir comment utiliser ces fonctions vous pouvez vous référer à :
 Les exercices suivants visent à expérimenter certains __Opérateurs Multicanaux__
 qui sont des __*Pipeable Operators*__.
 
-* [Exercice 1](./exercice-01) : Utiliser l'__Opérateur Multicanal__ `publish`.
+* (__A Venir__) [Exercice 1](./exercice-01) : Utiliser l'__Opérateur Multicanal__ `publish`.
 
 ---
 

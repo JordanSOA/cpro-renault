@@ -23,9 +23,9 @@ Pour savoir comment utiliser ces fonctions vous pouvez vous référer à :
 Les exercices suivants visent à expérimenter certains __Opérateurs de Filtrage__
 qui sont des __*Pipeable Operators*__.
 
-* [Exercice 1](./exercice-01) : Utiliser l'__Opérateur de Filtrage__ `filter`.
+* (__A Venir__) [Exercice 1](./exercice-01) : Utiliser l'__Opérateur de Filtrage__ `filter`.
 
-* [Exercice 2](./exercice-02) : Utiliser l'__Opérateur de Filtrage__ `distinct`.
+* (__A Venir__) [Exercice 2](./exercice-02) : Utiliser l'__Opérateur de Filtrage__ `distinct`.
 
 ---
 
