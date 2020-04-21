@@ -25,6 +25,7 @@ Exemples :
 Objectif : Comprendre la méthode AJAX
 
 - [Exercice 1 (XHR): GET et POST](./exercices/natif/exercices/exercice-1.md)
+  * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`
   * Nécessite l'API JavaScript [XmlHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XmlHttpRequest)
   * Nécessite une API REST avec opérations CRUD sur une entité Adresses. On s'intéresse ici particulièrement aux opérations Create et Read.
 - [Exercice 2 (Fetch): GET et POST](./exercices/natif/exercices/exercice-2.md)
