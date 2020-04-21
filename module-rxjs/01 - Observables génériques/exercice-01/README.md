@@ -6,7 +6,7 @@
 
 Vous allez travailler avec la "classe" `Observable` de RxJS [documentée ici](https://rxjs-dev.firebaseapp.com/api/index/class/Observable).
 
-La "classe" `Observable` nécessite une fonction qui sera initialement exécutée lors de la première souscription d'un "abonné" (voir l'[exemple](../../00%20-%20Exemples/exemple-00)).
+La "classe" `Observable` nécessite une fonction qui sera initialement exécutée lors de la première souscription d'un "abonné" (voir l'[exemple](../../00%20-%20Exemples/exemple-00/README.md)).
 
 Puis vous utiliserez, par la suite, la "classe" `Subjet` de RxJS [documentée ici](hhttps://rxjs-dev.firebaseapp.com/api/index/class/Subject).
 
