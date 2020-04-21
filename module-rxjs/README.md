@@ -36,14 +36,14 @@ En cas de problème, n'hésitez pas à solliciter mon aide.
 
 ### Exercices
 
-* [Exemples](./00%20-%20Exemples/exemple-00/README.md)
-* [Observables génériques](./01-%20Observables%20génériques/README.md)
-* (__NEW__ !) [Opérateurs de création](./02%20-%20Opérateurs%20de%20création/README.md)
-* (__NEW__ !) [Opérateurs de jointure](./03%20-%20Opérateurs%20de%20jointure/README.md)
-* [Opérateurs de transformation](./04%20-%20Opérateurs%20de%20transformation/README.md)
-* [Opérateurs de filtrage](./05%20-%20Opérateurs%20de%20filtrage/README.md)
-* [Opérateurs multicanaux](./06%20-%20Opérateurs%20multicanaux/README.md)
-* [Opérateurs utilitaires et autres](./07%20-%20Opérateurs%20utilitaires%20et%20autres/README.md)
+* [Exemples](./00%20-%20Exemples)
+* [Observables génériques](./01%20-%20Observables%20génériques)
+* (__NEW__ !) [Opérateurs de création](./02%20-%20Opérateurs%20de%20création)
+* (__NEW__ !) [Opérateurs de jointure](./03%20-%20Opérateurs%20de%20jointure)
+* [Opérateurs de transformation](./04%20-%20Opérateurs%20de%20transformation)
+* [Opérateurs de filtrage](./05%20-%20Opérateurs%20de%20filtrage)
+* [Opérateurs multicanaux](./06%20-%20Opérateurs%20multicanaux)
+* [Opérateurs utilitaires et autres](./07%20-%20Opérateurs%20utilitaires%20et%20autres)
 * Observables pour faire de l'AJAX : __Voir module AJAX__
 
 ---
