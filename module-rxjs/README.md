@@ -28,7 +28,7 @@ Pour initialiser votre dossier de travail :
 
 ### Exemple :
 
-Pour valider, vérifier et observer le fonctionnement de RxJS, vous pouvez consulter l'[exemple](./00%20-%20Exemples/exemple-00/README.md) fourni.
+Pour valider, vérifier et observer le fonctionnement de RxJS, vous pouvez consulter l'[exemple](./00%20-%20Exemples/exemple-00) fourni.
 
 Pensez à vous positionner, à l'aide de votre terminal, à la racine du dossier [exemple-00](./00%20-%20Exemples/exemple-00) et à démarrer le serveur de développement de webpack à l'aide de `npm start` pour tester l'exemple.
 

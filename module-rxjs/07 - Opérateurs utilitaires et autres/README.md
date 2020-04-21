@@ -23,12 +23,12 @@ Pour savoir comment utiliser ces fonctions vous pouvez vous référer à :
 Les exercices suivants visent à expérimenter certains __Opérateurs utilitaires__
 qui sont des __*Pipeable Operators*__.
 
-* [Exercice 1](./exercice-01/README.md) : Utiliser l'__Opérateur utilitaire__ `toArray`.
+* [Exercice 1](./exercice-01) : Utiliser l'__Opérateur utilitaire__ `toArray`.
 
-* [Exercice 2](./exercice-02/README.md) : Utiliser l'__Opérateur utilitaire__
+* [Exercice 2](./exercice-02) : Utiliser l'__Opérateur utilitaire__
   `find`.
 
-* [Exercice 3](./exercice-03/README.md) : Utiliser l'__Opérateur utilitaire__
+* [Exercice 3](./exercice-03) : Utiliser l'__Opérateur utilitaire__
   `reduce`.
 
 ---
