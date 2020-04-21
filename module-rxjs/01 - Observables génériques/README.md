@@ -11,9 +11,9 @@ Pour savoir comment utiliser ces "classes" vous pouvez vous référer à :
 
 Les exercices suivants visent à expérimenter ces différents types d'Observables en utilisant des évènements comme source de données à émettre.
 
-* [Exercice 1](./exercice-01/README.md) : Utiliser la "classe" `Observable` et `Subject`.
+* [Exercice 1](./exercice-01) : Utiliser la "classe" `Observable` et `Subject`.
 
-* [Exercice 2](./exercice-02/README.md)  : Utiliser la "classe" `ReplaySubject` et `BehaviorSubjet`.
+* [Exercice 2](./exercice-02)  : Utiliser la "classe" `ReplaySubject` et `BehaviorSubjet`.
 
 ---
 

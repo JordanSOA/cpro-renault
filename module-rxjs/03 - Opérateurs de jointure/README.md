@@ -24,9 +24,9 @@ Les exercices suivants visent à expérimenter certains __Opérateurs de Jointur
 qui sont des __Opérateurs de Création__ dont la particularité est de prendre
 en paramètres d'autres *Observables*.
 
-* [Exercice 1](./exercice-01/README.md) : Utiliser l'__Opérateur de Jointure__ `merge`.
+* [Exercice 1](./exercice-01) : Utiliser l'__Opérateur de Jointure__ `merge`.
 
-* [Exercice 2](./exercice-02/README.md) : Utiliser l'__Opérateur de Jointure__ `zip`.
+* [Exercice 2](./exercice-02) : Utiliser l'__Opérateur de Jointure__ `zip`.
 
 ---
 

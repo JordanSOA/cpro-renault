@@ -22,9 +22,9 @@ Pour savoir comment utiliser ces fonctions vous pouvez vous référer à :
 
 Les exercices suivants visent à expérimenter certains __Opérateurs de Création__.
 
-* [Exercice 1](./exercice-01/README.md) : Utiliser les __Opérateurs de Création__ `from` et `fromEvent`.
+* [Exercice 1](./exercice-01) : Utiliser les __Opérateurs de Création__ `from` et `fromEvent`.
 
-* [Exercice 2](./exercice-02/README.md) : Utiliser les __Opérateurs de Création__ `iif` et `range`.
+* [Exercice 2](./exercice-02) : Utiliser les __Opérateurs de Création__ `iif` et `range`.
 
 ---
 
