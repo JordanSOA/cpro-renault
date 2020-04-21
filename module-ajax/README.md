@@ -13,7 +13,7 @@ __Février 2020, Mars 2020__
 
 ## [Exercices avec XmlHttpRequest et Fetch](./exercices/natif/exercices)
 
-Exemples :
+### Exemples :
 
 * [Clients XHR et Fetch](./exercices/natif/exemples/clients)
 * [Serveur basé sur Node](./exercices/natif/exemples/serveur-natif)
@@ -22,7 +22,9 @@ Exemples :
   * *Vous avez besoin d'une base de données pour le faire fonctionner*. Le code
   `sql` de [création de la base de données est disponible ici](./exercices/natif/exemples/serveur-express/database).
 
-Objectif : Comprendre la méthode AJAX
+### Enoncés :
+
+__Objectif : Comprendre la méthode AJAX__
 
 - [Exercice 1 (XHR): GET et POST](./exercices/natif/exercices/exercice-1.md)
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`
@@ -62,7 +64,18 @@ Objectif : Comprendre la méthode AJAX
 
 ## Exercices avec RxJS
 
-Objectif : Combiner les Observables avec la méthode AJAX
+### Exemples :
+
+* [Clients basés sur `RxJS`](./exercices/rxjs/exemples/clients)
+* [Serveur basé sur Express/PgSQL](./exercices/rxjs/exemples/serveur-express)
+  * *Vous avez besoin d'une base de données pour le faire fonctionner*. Le code
+  `sql` de [création de la base de données est disponible ici](./exercices/rxjs/exemples/serveur-express/database).
+
+### Enoncés :
+
+__Objectif : Combiner les *Observables* avec la méthode AJAX__
+
+
 
 ---
 
