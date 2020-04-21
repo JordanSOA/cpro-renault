@@ -19,7 +19,8 @@ Exemples :
 * [Serveur basé sur Node](./exercices/natif/exemples/serveur-natif)
   * *Sans base de données*.
 * [Serveur basé sur Express/PgSQL](./exercices/natif/exemples/serveur-express)
-  * *Vous avez besoin d'une base de données pour le faire fonctionner*.
+  * *Vous avez besoin d'une base de données pour le faire fonctionner*. Le code
+  `sql` de [création de la base de données est disponible ici](./exercices/natif/exemples/serveur-express/database).
 
 Objectif : Comprendre la méthode AJAX
 
