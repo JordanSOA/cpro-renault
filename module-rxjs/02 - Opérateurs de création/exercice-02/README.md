@@ -46,7 +46,8 @@ est impair.
   * Créez un premier robot. l'identifiant de ce robot est une valeur aléatoire
     comprise entre 0 et 100.
 
-  * Partie I :
+### Partie I :
+
     * Utiliser l'Opérateur de Création `iif` ainsi que la "classe" `Observable`
       pour obtenir un *Observable* qui émet à ses *Observer* la valeur de retour
       de la méthode `equipeBleue` si son identifiant est pair, sinon, la valeur
@@ -55,7 +56,8 @@ est impair.
       la valeur émise par l'*Observable* obtenu à l'aide de `iif` dans la
       console.
 
-  * Partie II :
+### Partie II :
+
     * Utiliser l'Opérateur de Création `range` pour créer 100 robots (avec pour
       chacun un identifiant aléatoire) et faites en sorte que chaque robot soit
       associé à un *Observable* et un *Observer* sur le même modèle que dans la

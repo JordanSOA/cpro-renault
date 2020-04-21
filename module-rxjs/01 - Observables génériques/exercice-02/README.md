@@ -28,6 +28,7 @@ Il s'agit ici de reprendre le même comportement que celui proposé par l'exerci
 * Réécrivez le programme de l'exercice précèdent de telle sorte que lorsque l'utilisateur clique sur la souris, la séquence touche saisie se réaffiche à la suite de la séquence précédente.
 
 ### Partie 2 :
+
 * Importez la "classe" `BehaviorSubject` de `RxJS`.
 * Réécrivez le programme de l'exercice précèdent de telle sorte que lorsque l'utilisateur clique sur la souris, la dernière touche saisie se réaffiche à la suite de la séquence qui précède.
 
