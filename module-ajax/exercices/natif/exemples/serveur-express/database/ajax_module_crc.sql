@@ -5,7 +5,30 @@
 -- Dumped from database version 12.2
 -- Dumped by pg_dump version 12.2
 
--- Started on 2020-04-21 18:06:09
+-- Started on 2020-04-21 19:59:04
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 2843 (class 1262 OID 16414)
+-- Name: ajax_module_crc; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE ajax_module_crc WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'French_France.1252' LC_CTYPE = 'French_France.1252';
+
+
+ALTER DATABASE ajax_module_crc OWNER TO postgres;
+
+\connect ajax_module_crc
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -53,7 +76,7 @@ CREATE SEQUENCE public.cities_id_seq
 ALTER TABLE public.cities_id_seq OWNER TO postgres;
 
 --
--- TOC entry 2849 (class 0 OID 0)
+-- TOC entry 2844 (class 0 OID 0)
 -- Dependencies: 206
 -- Name: cities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -91,7 +114,7 @@ CREATE SEQUENCE public.countries_id_seq
 ALTER TABLE public.countries_id_seq OWNER TO postgres;
 
 --
--- TOC entry 2850 (class 0 OID 0)
+-- TOC entry 2845 (class 0 OID 0)
 -- Dependencies: 202
 -- Name: countries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -130,7 +153,7 @@ CREATE SEQUENCE public.regions_id_seq
 ALTER TABLE public.regions_id_seq OWNER TO postgres;
 
 --
--- TOC entry 2851 (class 0 OID 0)
+-- TOC entry 2846 (class 0 OID 0)
 -- Dependencies: 204
 -- Name: regions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -160,78 +183,6 @@ ALTER TABLE ONLY public.countries ALTER COLUMN id SET DEFAULT nextval('public.co
 --
 
 ALTER TABLE ONLY public.regions ALTER COLUMN id SET DEFAULT nextval('public.regions_id_seq'::regclass);
-
-
---
--- TOC entry 2843 (class 0 OID 16438)
--- Dependencies: 207
--- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.cities (id, name, region_id) FROM stdin;
-1	Paris	1
-2	Neuilly Sur Seine	1
-3	Rennes	2
-4	Lorient	2
-5	Munich\n	3
-6	Berlin	4
-7	Florence	5
-\.
-
-
---
--- TOC entry 2839 (class 0 OID 16417)
--- Dependencies: 203
--- Data for Name: countries; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.countries (id, name) FROM stdin;
-1	France
-2	Allemagne
-3	Italie
-\.
-
-
---
--- TOC entry 2841 (class 0 OID 16425)
--- Dependencies: 205
--- Data for Name: regions; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-COPY public.regions (id, name, country_id) FROM stdin;
-1	île de France	1
-2	Bretagne	1
-3	Bavière	2
-4	Brandebourg	2
-5	Toscane	3
-\.
-
-
---
--- TOC entry 2852 (class 0 OID 0)
--- Dependencies: 206
--- Name: cities_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.cities_id_seq', 7, true);
-
-
---
--- TOC entry 2853 (class 0 OID 0)
--- Dependencies: 202
--- Name: countries_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.countries_id_seq', 3, true);
-
-
---
--- TOC entry 2854 (class 0 OID 0)
--- Dependencies: 204
--- Name: regions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
---
-
-SELECT pg_catalog.setval('public.regions_id_seq', 5, true);
 
 
 --
@@ -295,7 +246,7 @@ ALTER TABLE ONLY public.cities
     ADD CONSTRAINT region_id FOREIGN KEY (region_id) REFERENCES public.regions(id) NOT VALID;
 
 
--- Completed on 2020-04-21 18:06:10
+-- Completed on 2020-04-21 19:59:05
 
 --
 -- PostgreSQL database dump complete

@@ -27,7 +27,7 @@
 
 ---
 
-### (__NEW__ !) [Module Node](./module-node)
+### [Module Node](./module-node)
 
 *(En Cours..)* __Décembre 2019, Janvier 2020, Février 2020, ...__
 
@@ -57,7 +57,7 @@
 
 * Comprendre le principe de la méthode AJA(x);
 * Savoir utiliser les API natives pour effectuer des requêtes HTTP asynchrones;
-* Apprendre à utiliser des librairies/frameworks pour effectuer des requêtes HTTP asynchrones;
+* Apprendre à utiliser des librairies/Frameworks pour effectuer des requêtes HTTP asynchrones;
 * Combiner l'AJA(x) avec des designs patterns adaptés aux traitements asynchrones (RxJS principalement);
 * ...
 
@@ -68,8 +68,8 @@
 *(En Cours...)* __Mars 2020, Avril 2020, ...__
 
 * Comprendre le design pattern Observable et savoir lire un *Marble Diagram*;
-* Savoir utiliser le framework RxJS pour créer des Observables et des Observers;
-* Savoir utiliser des Operators des RxJS pour effectuer diverses transformations;
+* Savoir utiliser le Framework RxJS pour créer des Observables et des Observers;
+* Savoir utiliser des *Operators* de RxJS pour effectuer diverses transformations;
 * ...
 
 ---
