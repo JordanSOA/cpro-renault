@@ -114,7 +114,7 @@ app.post("/person", function(request, response){
 });
 
 app.get("/person/:person", function(request, response){
-  if (! isNaN(request.params.personId)) {
+  if (! isNaN(request.params.person)) {
     const personId = parseFloat(request.params.person);
 
     pool.connect()
