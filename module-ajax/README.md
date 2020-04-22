@@ -21,6 +21,10 @@ __Février 2020, Mars 2020__
 * [Serveur basé sur `Express`/`PgSQL`](./exercices/natif/exemples/serveur-express)
   * *Vous avez besoin d'une base de données pour le faire fonctionner*. Le code
   `sql` de [création de la base de données est disponible ici](./exercices/natif/exemples/serveur-express/database).
+  * Pour utiliser les scripts de création  SQL  (qui vont avec le serveur Express)
+    et recréer une base de données à partir de ces  fichiers :
+    - `c:\Program Files\PostgreSQL\12\bin\psql.exe -U postgres -W -f "c:\chemin\vers\fichier.sql"`
+    - `psql` est un utilitaire en ligne de commande de PostgreSQL.
 
 ### Enoncés :
 
@@ -70,6 +74,10 @@ __Objectif : Comprendre la méthode AJAX__
 * [Serveur basé sur `Express`/`PgSQL`](./exercices/rxjs/exemples/serveur-express)
   * *Vous avez besoin d'une base de données pour le faire fonctionner*. Le code
   `sql` de [création de la base de données est disponible ici](./exercices/rxjs/exemples/serveur-express/database).
+  * Pour utiliser les scripts de création  SQL  (qui vont avec le serveur Express)
+    et recréer une base de données à partir de ces  fichiers :
+    - `c:\Program Files\PostgreSQL\12\bin\psql.exe -U postgres -W -f "c:\chemin\vers\fichier.sql"`
+    - `psql` est un utilitaire en ligne de commande de PostgreSQL.
 
 ### Présentation :
 
