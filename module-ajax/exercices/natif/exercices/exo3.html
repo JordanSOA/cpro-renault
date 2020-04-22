@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo3</title>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            var affichageDiv = document.querySelector("#affichage");
+
+            var selectTag = document.querySelector("#countryList");
+
+
+            const xhr = new XMLHttpRequest();
+            const url = `http://localhost:8080/country/`;
+            const methode = "GET";
+            xhr.open(methode, url);
+            xhr.send();
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var myArr = JSON.parse(this.responseText);
+                    console.log(myArr);
+                    myArr.forEach(element => {
+                        var option = document.createElement("option");
+                        option.id = element.id;
+                        option.innerText = `Country: ${element.name}, Lang: ${element.language} <span><button>Delete</button></span>`;
+                        option.form = document.getElementsByTagName("form");
+                        selectTag.appendChild(option);
+                    });
+                }
+            });
+
+            var tousLesSelect = window.document.getElementsByTagName("select");
+            tousLesSelect[0].addEventListener("change", function (event) {
+                event.preventDefault();
+                const selection = tousLesSelect[0].options[tousLesSelect[0].selectedIndex].id;
+                console.log(selection);
+                if (isNaN(selection)) {
+                    affichageDiv.innerHTML = `<form id="createCountryAndRegion">
+                                                <h3>Create A country and a region</h3>
+                                                <p>Pays: <input type="text" name="countryName" /></p>
+                                                <p>Langage: <input type="text" name="countryLanguage" /></p>
+                                                <p>Nom de Region : <input type="text" name="regionName" /></p>
+                                                <p><input type="submit" value="Enregistrer" /></p>
+                                                <p id="countryAndRegionCreation"></p>
+                                            </form>
+                                            <form id="createCountry">
+                                                <h3>Create A country</h3>
+                                                <p>Pays: <input type="text" name="countryName" /></p>
+                                                <p>Langage: <input type="text" name="countryLanguage" /></p>
+                                                <p><input type="submit" value="Enregistrer" /></p>
+                                                <p id="countryCreation"></p>
+                                            </form>`;
+                    //Create  Country and Region / Post                      
+                    const tousLesForm = window.document.getElementsByTagName("form");
+                    tousLesForm[1].addEventListener("submit", function (submitEvent) {
+                        submitEvent.preventDefault();
+                        const tousLesInput = window.document.getElementsByTagName("input");
+                        const countryName = tousLesInput[0].value;
+                        const countryLanguage = tousLesInput[1].value;
+                        const regionName = tousLesInput[2].value;
+
+                        const url = `http://localhost:8080/country/region`;
+                        const method = "POST";
+                        var data = {
+                            "country": {
+                                "name": `${countryName}`,
+                                "language": `${countryLanguage}`,
+                            },
+                            "region": {
+                                "name": `${regionName}`
+                            }
+                        };
+                        const xhr = new XMLHttpRequest();
+                        xhr.open(method, url);
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                        xhr.send(JSON.stringify(data));
+
+                        xhr.onreadystatechange = function () {
+                            if (this.readyState === 4 && this.status == 200) {
+                                countryRegionCreateDiv.innerHTML += `SUCCESS : Country : ${countryName} and Region : ${regionName} Created`;
+                            } else if (this.readyState === 4 && this.status == 500) {
+                                countryRegionCreateDiv.innerHTML += `ERROR : Country : ${countryName} already exist !`;
+                            } else if (this.readyState === 4 && this.status == 400) {
+                                countryRegionCreateDiv.innerHTML += `ERROR : Country : ${countryName} already exist !`;
+                            }
+                        }
+                    });
+                    //Create Country / Post
+                    tousLesForm[2].addEventListener("submit", function (submitEvent) {
+                        const tousLesInput = window.document.getElementsByTagName("input");
+                        submitEvent.preventDefault();
+                        const countryName = tousLesInput[4].value;
+                        const countryLanguage = tousLesInput[5].value;
+                        const url = `http://localhost:8080/country/`;
+                        const method = "POST";
+
+                        var data2 = {
+                            "name": `${countryName}`,
+                            "language": `${countryLanguage}`
+                        };
+                        const xhr = new XMLHttpRequest();
+                        xhr.open(method, url);
+                        xhr.setRequestHeader("Content-Type", "application/json");
+                        xhr.send(JSON.stringify(data2));
+
+                        xhr.onreadystatechange = function () {
+                            if (this.readyState === 4 && this.status == 200) {
+                                countryCreateDiv.innerHTML += `SUCCESS : Country : ${countryName} Created`;
+                            } else if (this.readyState === 4 && this.status == 500) {
+                                countryCreateDiv.innerHTML += `ERROR : Country : ${countryName} already exist !`;
+                            } else if (this.readyState === 4 && this.status == 400) {
+                                countryCreateDiv.innerHTML += `ERROR : Country : ${countryName} is not a valid syntax !`;
+                            }
+                        }
+                    });
+                } else {
+                    const xhr = new XMLHttpRequest();
+                    const url = `http://localhost:8080/country/${selection}/region`;
+                    const methode = "GET";
+                    xhr.open(methode, url);
+                    xhr.send();
+
+                    xhr.onreadystatechange = function (event) {
+                        // affichageDiv.innerHTML = "";
+                        //event.preventDefault();
+                        if (this.readyState === 4) {
+                            let regionInCountry = JSON.parse(this.responseText);
+
+                            var optionVide = document.createElement("option");
+                            optionVide.innerText = "-- Pas de region selectionnée --";
+                            optionVide.id = "no";
+                            optionVide.form = document.getElementsByTagName("form");
+                            var regionSelect = document.createElement("select");
+                            regionSelect.appendChild(optionVide);
+                            regionInCountry.forEach(element => {
+                                console.log(element);
+                                //var regionSelect = document.createElement("select");
+                                affichageDiv.innerText = "";
+                                var option = document.createElement("option");
+                                option.id = element.id;
+                                option.innerText = `Region: ${element.name}`;
+                                option.form = document.getElementsByTagName("form");
+                                regionSelect.appendChild(option);
+                                affichageDiv.appendChild(regionSelect);
+                            });
+                            //HERE 
+                            regionSelect.addEventListener("change", function () {
+                                const selectionRegion = this.options[this.selectedIndex].id;
+                                if (isNaN(selectionRegion)) {
+                                    affichageDiv.innerHTML = `<form id="createRegion">
+                                            <h3>Add A Region</h3><span>
+                                            <p>Nom de Region : <input type="text" name="regionName" /></p>
+                                            <p><input type="submit" value="Enregistrer" /></p>
+                                        </form>`;
+                                    const tousLesForm = window.document.getElementsByTagName("form");
+                                    const countryCreateMessage = document.getElementById("#countryCreation");
+                                    tousLesForm[1].addEventListener("submit", function (submitEvent) {
+                                        submitEvent.preventDefault();
+                                        const tousLesInput = window.document.getElementsByTagName("input");
+                                        const regionName = tousLesInput[0].value;
+                                        var regionData = {
+                                            "name": `${regionName}`
+                                        };
+                                        console.log(regionData);
+                                        //ADD/CREATE REGION , POST 
+                                        const url = `http://localhost:8080/country/${selection}`;
+                                        const method = "POST";
+                                        const xhr = new XMLHttpRequest();
+                                        xhr.open(method, url);
+                                        xhr.setRequestHeader("Content-Type", "application/json");
+                                        xhr.send(JSON.stringify(regionData));
+                                        var createRegionText = document.createElement("div");
+
+                                        xhr.onreadystatechange = function () {
+                                            if (this.readyState === 4 && this.status == 200) {
+                                                createRegionText.innerHTML = `SUCCESS : Region : ${regionName} created!`;
+                                            } else if (this.readyState === 4 && this.status == 500) {
+                                                createRegionText.innerText = `ERROR : Region : ${regionName} already exist !`;
+                                            } else if (this.readyState === 4 && this.status == 400) {
+                                                createRegionText.innerText = `ERROR : Region : ${regionName} is not a valid syntax !`;
+                                            }
+                                            tousLesInput[0].value = "";
+                                            affichageDiv.append(createRegionText);
+                                        }
+                                    });
+                                } else {
+                                    const xhr = new XMLHttpRequest();
+                                    const url = `http://localhost:8080//country/region/${selectionRegion}/city`;
+                                    const methode = "GET";
+                                    xhr.open(methode, url);
+                                    xhr.send();
+
+                                    xhr.onreadystatechange = function (event) {
+                                        event.preventDefault();
+                                        if (this.readyState === 4) {
+                                            let citiesInRegion = JSON.parse(this.responseText);
+                                            console.log(citiesInRegion);
+                                            var citiesList = document.createElement("ul");
+
+                                            var addCityDiv = document.createElement("div");
+                                            addCityDiv.innerHTML = `<form id="createCity">
+                                                                            <h3>Add A city</h3>
+                                                                            <p>Nom de city : <input type="text" name="cityName" /></p>
+                                                                            <p><input type="submit" value="Enregistrer" /></p>
+                                                                            <p id="cityCreation"></p>
+                                                                        </form>`;
+                                            citiesInRegion.forEach(city => {
+                                                citiesList.innerHTML += ` <li id="${city.id}">City : ${city.name}<span><button id="${city.id}">Delete</button></span> </li>`;
+                                            });
+                                            affichageDiv.appendChild(citiesList);
+                                            affichageDiv.appendChild(addCityDiv);
+
+                                            const tousLesForm = window.document.getElementsByTagName("form");
+                                            const countryCreateMessage = document.getElementById("#cityCreation");
+                                            tousLesForm[1].addEventListener("submit", function (submitEvent) {
+                                                submitEvent.preventDefault();
+                                                const tousLesInput = window.document.getElementsByTagName("input");
+                                                const cityName = tousLesInput[0].value;
+                                                var cityData = {
+                                                    "id": `${selectionRegion}`,
+                                                    "name": `${cityName}`
+                                                };
+                                                console.log(cityData);
+                                                //ADD/CREATE city , POST 
+                                                const url = `http://localhost:8080/country/region/city`;
+                                                const method = "POST";
+                                                const xhr = new XMLHttpRequest();
+                                                xhr.open(method, url);
+                                                xhr.setRequestHeader("Content-Type", "application/json");
+                                                xhr.send(JSON.stringify(cityData));
+
+                                                xhr.onreadystatechange = function () {
+                                                    if (this.readyState === 4 && this.status == 200) {
+                                                        let citiesInRegion = JSON.parse(this.responseText);
+                                                        citiesList.innerHTML = "";
+                                                        citiesInRegion.forEach(city => {
+                                                            citiesList.innerHTML += ` <li id="${city.id}">City : ${city.name}<span><button id="${city.id}">Delete</button></span> </li>`;
+                                                        });
+                                                    } else if (this.readyState === 4 && this.status == 500) {
+                                                        countryCreateMessage.innerHTML = `ERROR : Region : ${regionName} already exist !`;
+                                                    } else if (this.readyState === 4 && this.status == 400) {
+                                                        countryCreateMessage.innerHTML = `ERROR : Region : ${regionName} is not a valid syntax !`;
+                                                    }
+                                                }
+                                            });
+                                            var btn = document.querySelectorAll('button');
+
+                                            //For Each city 
+                                            btn.forEach(element => {
+                                                console.log(element.id);
+                                                //Delete city 
+                                                element.addEventListener("click", function () {
+                                                    const url = `http://localhost:8080/country/region/city/${element.id}`;
+                                                    const method = "DELETE";
+                                                    const xhr = new XMLHttpRequest();
+                                                    xhr.open(method, url);
+                                                    xhr.setRequestHeader("Content-Type", "application/json");
+                                                    xhr.send();
+
+                                                    xhr.onreadystatechange = function () {
+                                                        if (this.readyState === 4 && this.status == 200) {
+                                                            let citiesInRegion = JSON.parse(this.responseText);
+                                                            citiesList.innerHTML = "";
+                                                            citiesInRegion.forEach(city => {
+                                                                citiesList.innerHTML += ` <li id="${city.id}">City : ${city.name}<span><button id="${city.id}">Delete</button></span> </li>`;
+                                                            });
+                                                            //Should Return a new List
+                                                            /*
+                                                            let citiesInRegion = JSON.parse(this.this.data?);
+                                                            console.log(citiesInRegion);
+                                                            citiesInRegion.forEach(city => {
+                                                            citiesList.innerHTML += ` <li id="${city.id}">City : ${city.name}<span><button id="${city.id}">Delete</button></span> </li>`;
+                                                        });
+                                                            */
+                                                        } else if (this.readyState === 4 && this.status == 500) {
+                                                            console.log("Error Server");
+                                                        } else if (this.readyState === 4 && this.status == 400) {
+                                                            console.log("BAD Request Server");
+                                                        }
+                                                    }
+                                                });
+                                            });
+
+                                        }
+                                    };
+                                }
+                            });
+                            // });
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label>Country List</label>
+            <select id="countryList">
+                <option id="no" value="-">-- Pas de pays selectionnée --</option>
+            </select>
+        </p>
+    </form>
+    <div id="affichage">
+    </div>
+</body>
+
+</html>
