@@ -17,10 +17,10 @@ lNameLabel.innerHTML = "Last Name : ";
 let bDayLabel = window.document.createElement("label");
 bDayLabel.htmlFor = "bDayInput";
 bDayLabel.innerHTML = "BirthDate: ";
-let cityNameLabel =  window.document.createElement("label");
+let cityNameLabel = window.document.createElement("label");
 cityNameLabel.htmlFor = "cityNameInput";
 cityNameLabel.innerHTML = "Browse Address by City : ";
-let chosenAddressLabel =  window.document.createElement("label");
+let chosenAddressLabel = window.document.createElement("label");
 chosenAddressLabel.htmlFor = "chosenCityInput";
 chosenAddressLabel.innerHTML = "Chosen Address by City : ";
 
@@ -51,6 +51,14 @@ submitBtn.type = "submit";
 submitBtn.value = "Submit";
 submitBtn.innerHTML = "Submit";
 
+//Link element to create address
+
+let linkCreateAddress = window.document.createElement("a");
+linkCreateAddress.innerHTML = "Create a new address !";
+linkCreateAddress.style.color = "cornflowerblue";
+linkCreateAddress.style.textDecoration = "underline";
+linkCreateAddress.hidden = true; 
+
 let addressForm = window.document.createElement("form");
 addressForm.id = "createAddress";
 addressForm.innerHTML = `
@@ -72,6 +80,17 @@ let chosenAddressDelBtn = window.document.createElement("button");
 chosenAddressDelBtn.innerHTML = "&#x274C";
 chosenAddressDelBtn.id = "delBtnId"
 
+//Message For No MAtches in Db 
+/*    font-weight: bolder;
+    color: red;
+*/
+let msgNoMatch = window.document.createElement("p");
+msgNoMatch.innerHTML = "Browse again or create a new address";
+msgNoMatch.style.fontWeight = "bolder";
+msgNoMatch.style.color = "red";
+msgNoMatch.hidden = true; 
+
+
 const createOpt = function (params) {
     selectAddress.innerHTML = "";
     for (let index = 0; index < params.length; index++) {
@@ -90,24 +109,25 @@ divListCity.appendChild(listItemMatch);
 
 const createList = function (params) {
     listItemMatch.innerHTML = "";
-    
+
     for (let index = 0; index < params.length; index++) {
         let addressValue = params[index].idFromDb;
         let streetValue = params[index].street;
         let cityValue = params[index].city;
         let listText = ` City : ${cityValue} , Street : ${streetValue} <br> `;
         let listItem = window.document.createElement("li");
-        fromEvent(listItem, "click").subscribe(function(evt){
-            afficheChosenAddress(evt,params[index]);
+        fromEvent(listItem, "click").subscribe(function (evt) {
+            afficheChosenAddress(evt, params[index]);
         });
-        //listItem["data-address_id"] = addressValue;
         listItem.innerHTML = listText;
         listItemMatch.appendChild(listItem);
     }
+    divListCity.appendChild(listItemMatch);
     document.getElementById("personForm").appendChild(divListCity);
+    document.getElementById("personForm").appendChild(linkCreateAddress);
 }
 
-const refreshList = function(){
+const refreshList = function () {
     const obsSelectList = ajax({
         url: "http://localhost:8082/addresses",
         method: "GET",
@@ -121,7 +141,7 @@ const refreshList = function(){
     })
 };
 
-const afficheChosenAddress = function(evt, address){
+const afficheChosenAddress = function (evt, address) {
     evt.preventDefault();
     let streetChosen = address.street;
     let cityChosen = address.city;
@@ -129,7 +149,7 @@ const afficheChosenAddress = function(evt, address){
     let countryChosen = address.country;
     chosenCityInput.value = address.idFromDb;
     chosenAddressHtml.innerHTML = `Address chosen : ${streetChosen} in  ${cityChosen} (${zipCodeChosen}), Country : ${countryChosen}  `;
-    chosenAddressHtml.insertAdjacentElement("beforeend", chosenAddressDelBtn );
+    chosenAddressHtml.insertAdjacentElement("beforeend", chosenAddressDelBtn);
     personForm.appendChild(chosenAddressHtml);
 }
 
@@ -149,10 +169,12 @@ observable.subscribe(function (evt) {
     personForm.appendChild(chosenCityInput);
 
     //personForm.appendChild(selectAddress);
+    // personForm.appendChild(linkCreateAddress);
     personForm.appendChild(submitBtn);
-
+    personForm.appendChild(linkCreateAddress);
+    personForm.appendChild(msgNoMatch);
     window.document.body.appendChild(personForm);
-    window.document.body.appendChild(addressForm);
+    // window.document.body.appendChild(addressForm);
 
     refreshList();
 
@@ -161,12 +183,12 @@ observable.subscribe(function (evt) {
 // From Event OBS 
 const obsCreatePerson = fromEvent(personForm, "submit");
 const obsCreateAddress = fromEvent(addressForm, "submit");
-const obsCityName = fromEvent(cityNameInput,"keyup");
+const obsCityName = fromEvent(cityNameInput, "keyup");
 
 const obsDeleteCityChosenFromForm = fromEvent(chosenAddressDelBtn, "click");
 
 
-obsDeleteCityChosenFromForm.subscribe(function(evt){
+obsDeleteCityChosenFromForm.subscribe(function (evt) {
     evt.preventDefault();
     console.log(evt.target);
     //Reset lists
@@ -176,10 +198,10 @@ obsDeleteCityChosenFromForm.subscribe(function(evt){
     chosenCityInput.value = "";
 });
 
-obsCityName.subscribe(function(evt){
+obsCityName.subscribe(function (evt) {
     evt.preventDefault();
     let city = evt.target.value;
-    if (city != "" ) {
+    if (city != "") {
         const searchByCityName = ajax({
             url: `http://localhost:8082/addresses/searchByCityName/${city}`,
             method: "GET",
@@ -187,11 +209,22 @@ obsCityName.subscribe(function(evt){
                 "Content-Type": "application/json"
             }
         });
-    
-        searchByCityName.subscribe(function(data){
-            console.log(data.response);
-            createList(data.response);
+
+        searchByCityName.subscribe(function (data) {
+            if (data.response.length == 0) {
+                console.log("No matches found ");
+                msgNoMatch.hidden = false;
+                linkCreateAddress.hidden = false;
+                divListCity.innerHTML = "";
+            } else {
+                msgNoMatch.hidden = true;
+                linkCreateAddress.hidden = false;
+                createList(data.response);
+            }
         });
+    } else {
+        linkCreateAddress.hidden = false;
+        divListCity.innerHTML = "";
     }
 });
 
