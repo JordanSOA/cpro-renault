@@ -59,6 +59,12 @@ linkCreateAddress.style.color = "cornflowerblue";
 linkCreateAddress.style.textDecoration = "underline";
 linkCreateAddress.hidden = true; 
 
+let linkCloseAddressEdit = window.document.createElement("a");
+linkCloseAddressEdit.innerHTML = "Close Editor ";
+linkCloseAddressEdit.style.color = "red";
+linkCloseAddressEdit.style.textDecoration = "underline";
+
+
 let addressForm = window.document.createElement("form");
 addressForm.id = "createAddress";
 addressForm.innerHTML = `
@@ -80,10 +86,6 @@ let chosenAddressDelBtn = window.document.createElement("button");
 chosenAddressDelBtn.innerHTML = "&#x274C";
 chosenAddressDelBtn.id = "delBtnId"
 
-//Message For No MAtches in Db 
-/*    font-weight: bolder;
-    color: red;
-*/
 let msgNoMatch = window.document.createElement("p");
 msgNoMatch.innerHTML = "Browse again or create a new address";
 msgNoMatch.style.fontWeight = "bolder";
@@ -186,6 +188,27 @@ const obsCreateAddress = fromEvent(addressForm, "submit");
 const obsCityName = fromEvent(cityNameInput, "keyup");
 
 const obsDeleteCityChosenFromForm = fromEvent(chosenAddressDelBtn, "click");
+const obsCreateRequest = fromEvent(linkCreateAddress,"click");
+
+obsCreateRequest.subscribe(function(evt){
+    evt.preventDefault();
+    cityNameLabel.hidden = true;
+    cityNameInput.hidden = true;
+    divListCity.innerHTML = "";
+    addressForm.appendChild(linkCloseAddressEdit);
+    window.document.body.appendChild(addressForm);
+})
+
+const obsCloseEdit = fromEvent(linkCloseAddressEdit,"click");
+
+obsCloseEdit.subscribe(function(evt){
+    evt.preventDefault();
+    cityNameLabel.hidden = false;
+    cityNameInput.hidden = false;
+    window.document.body.removeChild(addressForm);
+})
+
+
 
 
 obsDeleteCityChosenFromForm.subscribe(function (evt) {
