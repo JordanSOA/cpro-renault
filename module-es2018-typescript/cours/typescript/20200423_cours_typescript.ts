@@ -3,7 +3,7 @@
   // Ce type de construction s'appelle fonction usine (factory function)
   // Documentation :  https://www.typescriptlang.org/docs/handbook/decorators.html#decorator-factories
   const mettreArmureDeIronMan = function(couleur: string) {
-    return function(constructeur: any){
+    return function (constructeur: any) {
       constructeur.prototype.couleur = couleur;
       constructeur.prototype.aDesBrasMetallique = true;
       constructeur.prototype.aUnPlastronProtecteur = true;
@@ -13,11 +13,14 @@
     }
   }
 
+
   @mettreArmureDeIronMan("rouge")
   // Déclaration de la "classe" qui permet de créer un personnnage
   class PersonnageMarvel {
+
     public prenom: string;
     public nom: string;
+
     constructor(prenom: string, nom: string) {
       this.prenom = prenom;
       this.nom  = nom;
