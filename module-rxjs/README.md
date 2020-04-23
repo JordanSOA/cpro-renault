@@ -40,7 +40,7 @@ En cas de problème, n'hésitez pas à solliciter mon aide.
 * [Observables génériques](./01%20-%20Observables%20génériques)
 * (__NEW__ !) [Opérateurs de création](./02%20-%20Opérateurs%20de%20création)
 * (__NEW__ !) [Opérateurs de jointure](./03%20-%20Opérateurs%20de%20jointure)
-* (__A Venir__) Opérateurs de transformation(./04%20-%20Opérateurs%20de%20transformation)
+* (__A Venir__) Opérateurs de transformation
 * (__A Venir__) Opérateurs de filtrage
 * (__A Venir__) Opérateurs multicanaux
 * (__A Venir__) Opérateurs utilitaires et autres
