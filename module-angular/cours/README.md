@@ -4,7 +4,7 @@
 
 ## Demo
 
-[Exemple 01](./exemple01)
+* [Exemple 01](./exemple01)
 
 ## Cours Angular
 
