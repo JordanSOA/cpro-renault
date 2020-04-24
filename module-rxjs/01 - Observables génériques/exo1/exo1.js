@@ -23,11 +23,16 @@ obsDomInit.subscribe(function () {
 //PART 1
 let keyPressCode = Observable.create(function (abonne) {
     window.addEventListener('keydown', function (keyboarEvent) {
-        abonne.next(keyboarEvent.keyCode);
+        if (keyboarEvent.keyCode != 13) {
+            abonne.next(keyboarEvent.keyCode);
+        } else {
+            abonne.complete();
+        }
     })
 })
 
-keyPressCode.subscribe(function (keyCodePress) {
+keyPressCode.subscribe({
+    next: function (keyCodePress) {
     if (keyCodePress == 38) {
         divResult.innerHTML = `<p> You hit the : ${arrUP} button </p>`;
     } else if (keyCodePress == 39) {
@@ -39,26 +44,40 @@ keyPressCode.subscribe(function (keyCodePress) {
     } else if (keyCodePress == 13) {
         divResult.innerHTML = `<p> <bold>Stop</bold> </p>`;
     }
-})
+},
+complete: function(){
+    console.log("FINI");
+} })
+
+
 
 //PART 2
 
 const foundButton = new Subject();
-
-foundButton.subscribe(function (keyCodePress) {
-        if (keyCodePress == 38) {
-            divResult.innerHTML = `<p> You hit the : ${arrUP} button </p>`;
-        } else if (keyCodePress == 39) {
-            divResult.innerHTML = `<p> You hit the : ${arrR} button </p>`;
-        } else if (keyCodePress == 40) {
-            divResult.innerHTML = `<p> You hit the : ${arrD} button </p>`;
-        } else if (keyCodePress == 37) {
-            divResult.innerHTML = `<p> You hit the : ${arrL} button </p>`;
-        } else if (keyCodePress == 13) {
-            divResult.innerHTML = `<p> <bold>Stop</bold> </p>`;
-        };
-    });
+//Objet next et complete 
+foundButton.subscribe({
+    next: function (keyCodePress) {
+    if (keyCodePress == 38) {
+        divResult.innerHTML = `<p> You hit the : ${arrUP} button </p>`;
+    } else if (keyCodePress == 39) {
+        divResult.innerHTML = `<p> You hit the : ${arrR} button </p>`;
+    } else if (keyCodePress == 40) {
+        divResult.innerHTML = `<p> You hit the : ${arrD} button </p>`;
+    } else if (keyCodePress == 37) {
+        divResult.innerHTML = `<p> You hit the : ${arrL} button </p>`;
+    } else if (keyCodePress == 13) {
+        divResult.innerHTML = `<p> <bold>Stop</bold> </p>`;
+    }
+},
+complete: function(){
+    console.log("FINI");
+} });
 
 window.addEventListener('keydown', function (keyboarEvent){
-    foundButton.next(keyboarEvent.keyCode);
+    //condition 13 
+    if (keyboarEvent.keyCode != 13) {
+        foundButton.next(keyboarEvent.keyCode);
+    } else {
+        foundButton.complete();
+    }
 });
