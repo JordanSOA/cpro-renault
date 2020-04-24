@@ -4,14 +4,14 @@
 
 ## Demo
 
-* (Exemple 01)[./exemple01]
+[Exemple 01](./exemple01)
 
 ## Cours Angular
 
 ### Extensions de VSCode utiles
 
-* (TSLint)[https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin]
-* (Angular Language Service)[https://marketplace.visualstudio.com/items?itemName=Angular.ng-template]
+* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
+* [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
 
 ###  Angular CLI
 
@@ -19,7 +19,7 @@
 
 ### Quelques points d'attention :
 
-* On peut écrire des balises aux noms personnalisés dans un document HTML. [Voir la spécification officielle du W3C ici](https://www.w3.org/TR/custom-elements/). Elles seront créées dans le DOM avec le type générique [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+* On peut écrire des balises aux noms personnalisés dans un document HTML. [Voir la spécification officielle du W3C ici](https://www.w3.org/TR/custom-elements/). Elles seront créées dans le DOM avec le type générique [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement).
 
 * On peut également écrire des attributs de balise personnalisés sur une balise HTML. [Voir la spécification officielle du W3C ici](https://www.w3.org/TR/2011/WD-html5-20110525/elements).html#embedding-custom-non-visible-data-with-the-data-attributes). Ils seront créés dans le DOM en tant que propriétés des objets du DOM sur lesquels ils ont été déclarés.
 
@@ -33,12 +33,12 @@
 
 ### Directives
 
-* [3 types de directives](https://angular.io/guide/attribute-directives).
-  * Les *Composants* : qui correspondent généralement à une balise;
-  * Les *Directives structurelles* : qui correspondent généralement à des attributs de balise dont la logique modifie le DOM.
-  * Les *Directives d'attributs* : qui correspondent généralement à des attributs de balise dont la logique modifie d'autres attributs.
+* [3 types de directives](https://angular.io/guide/attribute-directives) :
+  * Les *Composants*, qui correspondent généralement à une balise;
+  * Les *Directives structurelles*, qui correspondent généralement à des attributs de balise dont la logique modifie le DOM.
+  * Les *Directives d'attributs*, qui correspondent généralement à des attributs de balise dont la logique modifie d'autres attributs.
 
-* Les directives disponibles de base (c'est à dire créés par Angular et mise à la disposition du développeur) dans les *templates* sont toutes [listées sur](https://angular.io/api/common/CommonModule).
+* Les directives __disponibles de base__ (c'est à dire créés par Angular et mise à la disposition du développeur) dans les *templates* sont toutes [listées sur la page de `CommonModule`](https://angular.io/api/common/CommonModule). Il s'agit d'un sous-module du `BrowserModule` chargé dans le fichier de base `app.module.ts`.
 
 ---
 
