@@ -1,0 +1,11 @@
+
+<h1>Choucroute Merguez !!</h1>
+
+<p (mouseover)="uneMethodeDuComposant(45)" [ngStyle]="unStylePourMonP">{{ monAvis }}</p>
+
+<p (click)="switch($event)" [ngClass]="uneClassPourMonP">{{ monAvis }}</p>
+
+<p *ngIf="true"> Masqué </p>
+<p *ngIf="false"> Affichée </p>
+
+<p *ngIf="estCeQuelaClasseTotoEstUtilisee()"> Affichée </p>
