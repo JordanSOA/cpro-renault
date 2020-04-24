@@ -1,4 +1,4 @@
-# Formation : Module Architecture
+# Formation : Module Angular
 
 ---
 
