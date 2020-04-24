@@ -36,3 +36,7 @@ Créez 3 div auxquelles vous affecterez des propriétés de style de telle sorte
 Combinez la directive qui vous permet d'associer une valeur de formulaire à une propriété du composant, ainsi que l'utilisation de directive `NgIf` pour faire en sorte que lorsqu'on effectue un choix dans la liste de sélection on ne voit apparaître que les div qui correspondent au choix effectué.
 
 Indication : Les expressions peuvent contenir des calculs logiques. Exemple : `{{ 1 && 0 }}` donne `false` alors que `{{ 1 || 0 }}` donne `true`.
+
+---
+
+VirtuoWorks® - tous droits réservés©

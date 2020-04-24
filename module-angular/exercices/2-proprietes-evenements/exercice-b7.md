@@ -46,3 +46,7 @@ correspondant à l'objet dont l'index est fourni en argument.
 
 ## Partie 3
 Utilisez l'événement `(click)` pour faire en sorte que lorsqu'on clique sur une de div, on déclenche la méthode qui modifie le style dont l'index est fourni en argument.
+
+---
+
+VirtuoWorks® - tous droits réservés©

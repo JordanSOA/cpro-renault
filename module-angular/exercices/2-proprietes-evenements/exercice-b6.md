@@ -43,3 +43,7 @@ Créez un formulaire qui contient les champs suivants :
 
 ## Partie 2
 En utilisant la liaison événementielle, observez les changements d'état des `checkbox` et faites en sort que le bouton ne soit cliquable que lorsque les deux valeurs `newsletter` et `cgu` sont vraies.
+
+---
+
+VirtuoWorks® - tous droits réservés©

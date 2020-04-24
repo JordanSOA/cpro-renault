@@ -56,3 +56,7 @@ Utilisez l'événement `(click)` sur chaque titre `<h4>` pour exécuter la méth
 
 ## Partie 4
 Utilisez la directive `NgIf` sur chaque div qui contient une rubrique pour exécuter la méthode qui indique s'il est vrai ou faux que la rubrique concernée est active.
+
+---
+
+VirtuoWorks® - tous droits réservés©

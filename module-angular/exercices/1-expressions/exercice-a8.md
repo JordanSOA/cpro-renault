@@ -35,3 +35,7 @@ Initialisez un tableau qui contient 3 objets qui représentent des voitures. Une
 - Sa puissance, formatée en majuscule,
 - Son prix, formaté avec le filtre approprié,
 - Sa date de fabrication, au format "JJ/MM/AAAA".
+
+---
+
+VirtuoWorks® - tous droits réservés©

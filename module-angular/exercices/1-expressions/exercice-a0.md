@@ -38,3 +38,7 @@ Pour utiliser l'interpolation, écrivez le nom d'une propriété de la classe du
 ## Premiers pas
 - Videz entièrement le template du composant principal (`app.component.html`) et supprimez les propriétés de la classe correspondante.
 - Créez une nouvelle propriété `titre` contenat le texte "Exercices Angular" et affichez-la dans dans le template principal en tant que contenu de `<h1>`.
+
+---
+
+VirtuoWorks® - tous droits réservés©

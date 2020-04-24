@@ -35,3 +35,7 @@ Dans le template, créez un champ input auquel vous associerez la valeur de la p
 Créez un élément `h2` au dessus du champ texte contenant le mot "bonjour".
 
 Faites en sorte que la valeur courante du champ s'affiche dans le `<h2>` après le mot "bonjour".
+
+---
+
+VirtuoWorks® - tous droits réservés©

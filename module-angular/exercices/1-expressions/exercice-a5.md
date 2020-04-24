@@ -33,3 +33,7 @@ Créez une nouvelle propriété « classe » qui est un objet avec des propriét
 
 ## Partie 3
 À l'aide d'une expression, affichez à l'intérieur d'un paragraphe de texte le nombre d'inscrits (vous devez vous baser sur le tableau des inscrits pour obtenir cette information).
+
+---
+
+VirtuoWorks® - tous droits réservés©

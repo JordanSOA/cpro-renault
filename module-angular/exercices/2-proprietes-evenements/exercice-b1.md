@@ -48,3 +48,7 @@ Dans le template, créez 3 balises `img` qui utilisent la liaison de propriété
 ## Partie 3
 
 Améliorez votre template en limitant les répétitions : utilisez la directive `NgFor`.
+
+---
+
+VirtuoWorks® - tous droits réservés©

@@ -33,3 +33,7 @@ Créez une nouvelle propriété « classe » qui est un objet avec des propriét
 À l'aide d'une expression, affichez dans le template le nom de votre classe avec sa spécialité sur une même ligne.
 
 Affichez sur une autre ligne le nombre d'inscrits de votre classe.
+
+---
+
+VirtuoWorks® - tous droits réservés©

@@ -30,3 +30,6 @@ Donnez une référence de template à cet élément `<h2>` et affichez en dessou
 - le contenu texte du `<h2>`
 - le contenu de l'attribut `title` du `<h2>`
 
+---
+
+VirtuoWorks® - tous droits réservés©

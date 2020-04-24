@@ -43,3 +43,7 @@ Il existe plusieurs exceptions, en particulier on ne peut pas utiliser des expre
 - Que donne l'équation ((3x + 2) - (43x * (9y + 6))) / (2y - 7) si x vaut 4 et y vaut 19. Vous devez donc créer 2 propriétés numériques dans le composant.
 
 Sous chaque question affichez la résponse dans un paragraphe du template à l'aide d'une expression Angular via l'interpolation.
+
+---
+
+VirtuoWorks® - tous droits réservés©

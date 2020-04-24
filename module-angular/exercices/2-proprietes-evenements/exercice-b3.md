@@ -50,3 +50,7 @@ Modifiez la méthode pour faire en sorte que si l'incrémentation du nombre atte
 
 ## Partie 4
 Faites en sorte que le texte du bouton affiche le mot "incrémentation" lorsque l'incrémentation se produit mais le mot "décrémentation" lorsque la décrémentation se produit. Pour cela remplacez le texte du bouton par une expression qui utilise une propriété de la classe que la méthode modifiera selon le cas de figure.
+
+---
+
+VirtuoWorks® - tous droits réservés©

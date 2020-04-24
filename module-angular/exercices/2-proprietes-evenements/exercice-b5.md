@@ -41,3 +41,7 @@ Cela facilite les tests unitaires et sécurise le composant pour des usages avec
 
 ## Partie 3
 Dans le composant créez deux propriétés `x` et `y` qui seront mises à jour par la méthode `suivre()`. Affichez ces deux propriétés dans la `<div>`.
+
+---
+
+VirtuoWorks® - tous droits réservés©

@@ -39,3 +39,7 @@ Créez également un `<input>` de type `range` avec pour limites -100 et 100. Li
 - Lorsque le nombre est supérieur à zéro, la div a une bordure orange
 - Lorsque le nombre est inférieur à zéro, la div a une bordure bleue
 - Lorsque le nombre est égal à zéro, la div a une bordure grise
+
+---
+
+VirtuoWorks® - tous droits réservés©
