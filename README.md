@@ -74,11 +74,16 @@
 
 ---
 
-### [Module Angular](./module-angular)
+### (__NEW__ !) [Module Angular](./module-angular)
 
-*(Prochainement)* __Avril 2020, Mai 2020, ...__
+*(En Cours...)* __Avril 2020, Mai 2020, ...__
 
-* A Venir...
+* Comprendre les principes généraux de fonctionnement d'Angular;
+* Savoir créer des composants, utiliser des expressions et gérer des évènements;
+* Savoir créer et manipuler des formulaires et faire de la validation;
+* Savoir créer des modules, directives et services;
+* Savoir utiliser le routage;
+* ...
 
 ---
 
