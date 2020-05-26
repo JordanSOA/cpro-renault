@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -70,12 +71,16 @@ var __extends = (this && this.__extends) || (function () {
         }
         return Renault;
     }(FabricantDeVoiture));
+    // Assertion de type :
     var v = new Renault("Clio");
+    // Ici v est considérée comme un FabricantDeVoiture et pas comme une Renault
     window.addEventListener("DOMContentLoaded", function () {
         // Typage
         var element;
         //        Assertion de type :
         element = window.document.getElementById("petit-chat");
+        // Ici element est considéré comme un HTMLImageElement et non comme
+        // un HTMLElement
         element.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB4P7iLCGajjyq0zt1sM8813gWxtWe0FCij_TiJhSs0F-t1hoa&s";
     });
 }

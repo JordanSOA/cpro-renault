@@ -71,7 +71,7 @@
     class FabricantDeVoiture implements Voiture {
       roues: number;
       reservoir: number;
-      constructor(r){
+      constructor(r: number){
         this.roues = 4;
         this.reservoir = r;
       }
@@ -81,7 +81,7 @@
     class Renault extends FabricantDeVoiture {
       modele:  string;
       marque: "Renault"; // typage statique : marque doit contenir obligatoirement le texte "Renault"
-      constructor(modele) {
+      constructor(modele: string) {
         super(100);
         this.modele = modele;
         this.marque = "Renault"; // assignation ES2018.
