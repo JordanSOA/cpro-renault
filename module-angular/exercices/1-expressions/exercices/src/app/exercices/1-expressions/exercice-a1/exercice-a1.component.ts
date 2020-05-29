@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciceA1Component implements OnInit {
 
+  public result?: number;
+  public x:number = 4;
+  public y:number = 19;
   constructor() { }
 
   ngOnInit(): void {
+    this.calcul();
   }
 
+  calcul(){
+    this.result = (((3*this.x) + 2) - ((43*this.x) * ((9*this.y) + 6))) / ((2*this.y) - 7);
+  }
 }
