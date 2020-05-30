@@ -1,0 +1,7 @@
+
+<div *ngFor="let car of garage; let i = index">
+    <p>Modele : {{car.modele | titlecase}}</p>
+    <p>Puissance : {{car.puissance | uppercase}}</p>
+    <p>Prix : {{car.prix | currency:'EUR'}}</p>
+    <p>Date de Fabrication : {{car.dateFab | date:'dd/MM/yyyy'}}</p>
+</div>

@@ -1,0 +1,6 @@
+.cercle {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    display: inline-block;
+}

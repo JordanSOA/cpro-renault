@@ -1,0 +1,11 @@
+<div>
+    <label for="colorSelect"> Pick a choice</label>
+    <select name="color" id="colorSelect"  #selectCol [ngModel]="opt">
+        <option *ngFor="let color of opt; let i = index"  [value]="opt[i]"> {{opt[i]}}</option>
+    </select>
+</div>
+
+<div id="rondR" class="cercle" style="background-color: red;" *ngIf="(selectCol.value == opt[0]) || (selectCol.value == opt[3]) || (selectCol.value == opt[5])|| (selectCol.value == opt[6])" ></div>
+<div id="rondB" class="cercle" style="background-color: blue;" *ngIf="(selectCol.value == opt[1]) || (selectCol.value == opt[3]) || (selectCol.value == opt[4])|| (selectCol.value == opt[6])"></div>
+<div id="rondV" class="cercle" style="background-color: green;" *ngIf="(selectCol.value == opt[2]) || (selectCol.value == opt[4]) || (selectCol.value == opt[5])|| (selectCol.value == opt[6])"></div>
+
