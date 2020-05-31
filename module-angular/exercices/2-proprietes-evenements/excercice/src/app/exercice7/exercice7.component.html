@@ -1,0 +1,4 @@
+<div *ngFor="let item of styleCustom;let i = index" [ngStyle]="{'width':item.width+'px',
+                'height': item.height+'px',
+                'background-color': item.bgColor}" (click)="modifyWidth(i)">
+</div>

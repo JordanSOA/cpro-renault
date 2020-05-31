@@ -1,0 +1,33 @@
+<form #formRef="ngForm" (ngSubmit)="onSubmit(formRef.status)">
+    <label for="fname">Entrez votre prénom :</label>
+    <input #fname="ngModel" name="fname" type="text" minlength="2" [(ngModel)]="user.fname">
+    <p *ngIf="fname.invalid"> Prénom Invalide !!!!</p>
+    <label for="lname">Entrez votre nom :</label>
+    <input #lname="ngModel" name="lname" type="text" minlength="2" [(ngModel)]="user.lname">
+    <p *ngIf="lname.invalid"> Nom Invalide !!!!</p>
+    <label for="email">Entrez votre email :</label>
+    <input #email="ngModel" name="email" type="text" required [(ngModel)]="user.email">
+    <p *ngIf="email.invalid">Email Invalide !!!!</p>
+    <label for="age">Entrez votre age :</label>
+    <input #age name="age" type="number" [(ngModel)]="user.age">
+    <button type="submit">Validez</button>
+</form>
+<div>
+    <p>Prénom : {{user.fname}}</p>
+    <p>Nom: {{user.lname}}</p>
+    <p>Email : {{user.email}}</p>
+    <p>Age : {{user.age}}</p>
+</div>
+<div>
+    <p>Valid ? : {{formRef.valid}}</p>
+    <p>Invalid ? : {{formRef.invalid}}</p>
+    <p>Touched ? : {{formRef.touched}}</p>
+</div>
+<h2>Liste Utilisateur</h2>
+<div *ngFor="let user of listeUtilisateurs; let i = index">
+    <p>User N°{{i+1}} Infos:</p>
+    <p>Prénom : {{user.fname}}</p>
+    <p>Nom : {{user.lname}}</p>
+    <p>Email :{{user.email}}</p>
+    <p>Age : {{user.age}}</p>
+</div>

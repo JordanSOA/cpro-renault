@@ -1,0 +1,13 @@
+<div>
+    <h2>Partie1</h2>
+    <input type="text" name="keyC" (keyup)="gestionKeyUp($event)">
+    <p>Key Code : {{kcInput}}</p>
+</div>
+<div class="part2" (mousemove)="suivre($event.clientX,$event.clientY)">
+    <h2>Partie 2</h2>
+    <div>
+        <h4>Partie 3</h4>
+        <p>X : {{xVal}}</p>
+        <p>Y : {{yVal}}</p>
+    </div>
+</div>

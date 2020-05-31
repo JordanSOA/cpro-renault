@@ -1,0 +1,9 @@
+<div>
+    <label for="aboNews">Je m'abonne à la newsletter</label>
+    <input type="checkbox" name="aboNews" [checked]="news" (change)="checkNews($event.target.checked)">
+
+    <label for="cguAccept">J'accepte les CGU</label>
+    <input type="checkbox" name="cguAccept" [checked]="cgu" (change)="checkCgu($event.target.checked)">
+
+    <input type="button" [disabled]="valide" value="BUTTON">
+</div>
