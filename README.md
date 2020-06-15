@@ -51,7 +51,7 @@
 
 ---
 
-### (__NEW__ !) [Module AJAX](./module-ajax)
+### [Module AJAX](./module-ajax)
 
 *(En Cours...)* __Février 2020, Mars 2020, ...__
 
@@ -63,7 +63,7 @@
 
 ---
 
-### (__NEW__ !) [Module RxJS](./module-rxjs)
+### [Module RxJS](./module-rxjs)
 
 *(En Cours...)* __Mars 2020, Avril 2020, ...__
 
