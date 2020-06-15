@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TotoComponent } from './toto/toto.component';
+import { TitiComponent } from './titi/titi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TotoComponent
+    TotoComponent,
+    TitiComponent
   ],
   imports: [
     FormsModule,
