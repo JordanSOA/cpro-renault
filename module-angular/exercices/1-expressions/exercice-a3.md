@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice 3 - L’interpolation (invocation de méthodes)
+# Angular : les expressions - Exercice A3 - L’interpolation (invocation de méthodes)
 
 ## Préparation
 Créez un nouveau composant nommé "exercice-a3" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
