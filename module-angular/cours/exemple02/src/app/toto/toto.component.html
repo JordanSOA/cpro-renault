@@ -1,0 +1,25 @@
+<p>toto works !</p>
+
+<p>{{ message }}</p>  <!-- Ceci est un message de la part de toto -->
+
+<p>{{ coucou() }}</p> <!-- Affiche re coucou -->
+
+<p (click)="jeClique()">Cliquez moi</p> <!-- Invoque/Exécute la méthode .jeClique() au click -->
+
+Saisie : <input #objetDuDOMQuiCorrespondACeChamp (keydown)="touchePressee(objetDuDOMQuiCorrespondACeChamp.value)"/>
+
+<p (click)="jeClique()" [ngStyle]="zeStyle" >
+  {{ objetDuDOMQuiCorrespondACeChamp.baseURI }}
+</p>
+
+<input [(ngModel)]="message"/>
+
+<form #monForm="ngForm">
+  <p>nombre 1 : <input type="number" name="nbr1" [(ngModel)]="nombre1"/></p>
+  <p>nombre 2 : <input type="number" name="nbr2" [(ngModel)]="nombre2"/></p>
+  <input type="submit" value="Somme" (click)="calcul(monForm)"/>
+
+  <p>{{ monForm.form.pristine }}</p>
+</form>
+
+<p>Resultat : {{ resultat }}</p>
