@@ -1,0 +1,12 @@
+ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+li{
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}

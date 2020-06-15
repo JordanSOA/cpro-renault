@@ -1,0 +1,9 @@
+<div style="border: 2px solid blue;">
+    <label>To-Do List</label>
+    <ul>
+        <li *ngFor="let task of tasks">{{task}}
+        <span style="background-color: red;" (click)="removeTask(task)">
+            &#10007;</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,6 @@
+<div style="border: 2px solid green;">
+    <p [hidden]="msgShow" style="background-color: red;">Text not valid</p>
+    <label>Write a new task</label>
+    <input #inputTask type="text" >
+    <button (click)="addNewTask(inputTask.value)">Add Task</button>
+</div>
