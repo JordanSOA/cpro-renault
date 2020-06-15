@@ -2,7 +2,7 @@
 
 
 ## Préparation
-Créez un nouveau composant nommé "exercice-a7" dans le dossier `src/app/exercices/2-proprietes-evenements/`, en utilisant le [CLI Angular](https://angular.io/cli).
+Créez un nouveau composant nommé "exercice-a7" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
 
 Pour afficher ce composant, ajoutez le sélecteur correspondant dans le template du composant principal (`src/app/app.component.html`).
 
