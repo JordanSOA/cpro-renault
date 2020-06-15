@@ -1,8 +1,8 @@
-# Angular : les expressions - Exercice A6 - les références de template
+# Angular : les expressions - Exercice A7 - les références de template
 
 
 ## Préparation
-Créez un nouveau composant nommé "exercice-a6" dans le dossier `src/app/exercices/2-proprietes-evenements/`, en utilisant le [CLI Angular](https://angular.io/cli).
+Créez un nouveau composant nommé "exercice-a7" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
 
 Pour afficher ce composant, ajoutez le sélecteur correspondant dans le template du composant principal (`src/app/app.component.html`).
 

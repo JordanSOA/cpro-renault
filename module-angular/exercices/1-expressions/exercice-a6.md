@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice 5 - la directive NgIf
+# Angular : les expressions - Exercice A6 - la directive NgIf
 
 
 ## Préparation
