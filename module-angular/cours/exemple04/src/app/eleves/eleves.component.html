@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let eleve of eleves; index as indiceDeEleve">
+    <a [routerLink]="['/eleve', indiceDeEleve]" >{{ eleve.nom }}</a>
+  </li>
+</ul>
