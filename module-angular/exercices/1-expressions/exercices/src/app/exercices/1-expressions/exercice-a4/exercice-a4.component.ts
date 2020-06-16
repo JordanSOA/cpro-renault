@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciceA4Component implements OnInit {
 
-  firstname: string = "Jordan";
+  public firstname: string = "Jordan";
   
   constructor() { }
 

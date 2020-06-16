@@ -13,5 +13,5 @@ export class ExerciceA6Component implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

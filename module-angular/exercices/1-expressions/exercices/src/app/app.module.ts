@@ -6,11 +6,11 @@ import { ExerciceA0Component } from './exercices/1-expressions/exercice-a0/exerc
 import { ExerciceA1Component } from './exercices/1-expressions/exercice-a1/exercice-a1.component';
 import { ExerciceA2Component } from './exercices/1-expressions/exercice-a2/exercice-a2.component';
 import { ExerciceA3Component } from './exercices/1-expressions/exercice-a3/exercice-a3.component';
-import { ExerciceA4Component } from './exercices/1-expressions/exercice-a4/exercice-a4.component';
 import { ExerciceA5Component } from './exercices/1-expressions/exercice-a5/exercice-a5.component';
 import { ExerciceA6Component} from './exercices/1-expressions/exercice-a6/exercice-a6.component';
 import { ExerciceA7Component } from './exercices/1-expressions/exercice-a7/exercice-a7.component';
 import { ExerciceA8Component } from './exercices/1-expressions/exercice-a8/exercice-a8.component';
+import { ExerciceA4Component } from './exercices/1-expressions/exercice-a4/exercice-a4.component';
 @NgModule({
   declarations: [
     AppComponent,

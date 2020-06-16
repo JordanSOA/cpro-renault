@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { ExosComponent } from './exos.component';
 import { ExerciceA0Component } from './Expressions/exercice-a0/exercice-a0.component';
 import { ExerciceA1Component } from './Expressions/exercice-a1/exercice-a1.component';
@@ -19,36 +19,50 @@ import { Exercice4Component } from './Proprieteevenement/exercice4/exercice4.com
 import { Exercice5Component } from './Proprieteevenement/exercice5/exercice5.component';
 import { Exercice6Component } from './Proprieteevenement/exercice6/exercice6.component';
 import { Exercice7Component } from './Proprieteevenement/exercice7/exercice7.component';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { ExosRoutingModule } from './exos-routing.module';
-
-
+import { Exo1Component } from './Services/exo1/exo1.component';
+import { TodoListComponent } from './Services/exo2/todo-list/todo-list.component';
+import { TodoComponent } from './Services/exo2/todo/todo.component';
+import { TodoFormComponent } from './Services/exo2/todo-form/todo-form.component';
 
 @NgModule({
   declarations: [
-  ExosComponent,
-  ExerciceA0Component,
-  ExerciceA1Component,
-  ExerciceA2Component,
-  ExerciceA3Component,
-  ExerciceA4Component,
-  ExerciceA5Component,
-  ExerciceA6Component,
-  ExerciceA7Component,
-  ExerciceA8Component,
-  ExerciceC1Component,
-  ExerciceC2Component,
-  Exercice1Component,
-  Exercice2Component,
-  Exercice3Component,
-  Exercice4Component,
-  Exercice5Component,
-  Exercice6Component,
-  Exercice7Component,
+    //Expressions
+    ExerciceA0Component,
+    ExerciceA1Component,
+    ExerciceA2Component,
+    ExerciceA3Component,
+    ExerciceA4Component,
+    ExerciceA5Component,
+    ExerciceA6Component,
+    // ExerciceA7Component,
+    // ExerciceA8Component,
+    // //Formulaire
+    // ExerciceC1Component,
+    // ExerciceC2Component,
+    // //Proprietes Evenements
+    // Exercice1Component,
+    // Exercice2Component,
+    // Exercice3Component,
+    // Exercice4Component,
+    // Exercice5Component,
+    // Exercice6Component,
+    // Exercice7Component,
+    // //Services
+    // Exo1Component,
+    // //Exo2
+    // TodoComponent,
+    // TodoFormComponent,
+    // TodoListComponent
 ],
   imports: [
     CommonModule,
-    ExosRoutingModule
+    ExosRoutingModule,
+    BrowserModule,
+    FormsModule
   ],
-  exports:[ExosComponent]
+  exports:[]
 })
 export class ExosModule { }

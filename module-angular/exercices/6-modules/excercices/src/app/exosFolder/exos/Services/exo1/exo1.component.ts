@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CouleursService } from '../couleurs.service';
-
+import { CouleursService } from './couleurs.service';
 @Component({
   selector: 'app-exo1',
   templateUrl: './exo1.component.html',

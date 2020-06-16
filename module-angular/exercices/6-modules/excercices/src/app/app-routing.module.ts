@@ -3,10 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ExosComponent } from './exosFolder/exos/exos.component';
 
 
-const routes: Routes = [{
-  path:'/',
-  loadChildren: () =>  ExosComponent
-}];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
