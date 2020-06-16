@@ -1,0 +1,19 @@
+<div id="personForm">
+    <h2>Create a Person</h2>
+    <form>
+        <label for="first">Enter your firstname : </label>
+        <input type="text" name="firstname" placeholder="Bob">
+        <label for="lastname">Enter your lastname : </label>
+        <input type="text" name="lastname" placeholder="Marley">
+        <label for="birthdate">Enter your birth date : </label>
+        <input type="date" name="birthdate">
+        <label for="address">Select an address : </label>
+        <select name="address" id="address">
+            <option *ngFor="let address of addresses" [value]="address.id">{{address.street}} {{address.city}}</option>
+        </select>
+        <input type="email" name="email" placeholder="okok@cool.com">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+

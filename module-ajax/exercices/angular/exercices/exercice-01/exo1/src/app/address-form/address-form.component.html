@@ -1,0 +1,13 @@
+<div id="addressForm">
+    <form #addressForm >
+        <label for="street">Enter your street name : </label>
+        <input #street type="text" name="street" placeholder="123 rue Paul">
+        <label for="city">Enter your city name : </label>
+        <input #city type="text" name="city" placeholder="Paris">
+        <label for="zipCode">Enter your zipcode  : </label>
+        <input #zipCode type="text" name="zipCode">
+        <label for="country">Enter your country name : </label>
+        <input #country type="text" name="country" placeholder="France">
+        <button type="submit" (click)="addNewAddress(street.value,city.value,zipCode.value, country.value)">Submit</button>
+    </form>
+</div>
