@@ -116,7 +116,7 @@ Ci-après la :
 
 __Objectif : Combiner les *Observables* avec la méthode AJAX__
 
-- (__NEW__ !) [Exercice 1 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-01) : Créer une *personne* à partir d'une adresse *existante* dans une liste de séléction.
+- [Exercice 1 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-01) : Créer une *personne* à partir d'une adresse *existante* dans une liste de séléction.
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`
     ou l'exemple de [serveur basé sur Express/PgSQL](./exercices/rxjs/exemples/serveur-express)
     fourni.
@@ -124,15 +124,33 @@ __Objectif : Combiner les *Observables* avec la méthode AJAX__
   * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
     On s'intéresse ici particulièrement aux opérations Create et Read.
 
-- (__NEW__ !) [Exercice 2 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-02) : Créer une *personne* à partir d'une adresse *existante* récupérée à l'aide d'un champ d'"*autocompletion*".
+- [Exercice 2 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-02) : Créer une *personne* à partir d'une adresse *existante* récupérée à l'aide d'un champ d'"*autocompletion*".
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`.
   * Nécessite l'API RxJS [`ajax`](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
   * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
     On s'intéresse ici particulièrement aux opérations Create et Read.
 
-- (__NEW__ !) [Exercice 3 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-03) : Créer une *personne* à partir d'une adresse *existante* récupérée à l'aide d'un champ d'"*autocompletion*" __ou__ création d'une nouvelle adresse.
+- [Exercice 3 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-03) : Créer une *personne* à partir d'une adresse *existante* récupérée à l'aide d'un champ d'"*autocompletion*" __ou__ création d'une nouvelle adresse.
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`.
   * Nécessite l'API RxJS [`ajax`](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
+  * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
+    On s'intéresse ici particulièrement aux opérations Create et Read.
+
+---
+
+## Exercices avec Angular et le service HttpClient
+
+---
+
+### Enoncés :
+
+__Objectif : Utiliser le service *HttpClient* de Angular basé sur RxJS et s'appuyant sur la méthode AJAX__
+
+- [Exercice 1 (avec `Angular`): `GET` et `POST`](./exercices/angular/exercices/exercice-01) : Créer une *personne* à partir d'une adresse *existante* dans une liste de séléction.
+  * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`
+    ou l'exemple de [serveur basé sur Express/PgSQL](./exercices/rxjs/exemples/serveur-express)
+    fourni dans la partie RxJS.
+  * Nécessite le service [`HttpClient`](https://angular.io/guide/http) de `Angular`.
   * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
     On s'intéresse ici particulièrement aux opérations Create et Read.
 
