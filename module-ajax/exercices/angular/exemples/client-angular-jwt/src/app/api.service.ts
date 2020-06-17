@@ -3,9 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { of } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { Token, Profile, Error } from './api';
-import { Router } from '@angular/router';
-
-
 
 @Injectable({
   providedIn: 'root'
