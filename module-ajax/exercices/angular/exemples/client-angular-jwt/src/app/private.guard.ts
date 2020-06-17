@@ -14,11 +14,14 @@ export class PrivateGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-    return this.api.checkToken().pipe(
+      // map() est un opérateur qui permet de transformer la valeur emise par un observable à ses observer.
+      return this.api.checkToken().pipe(
       map((isValid) => {
         if (isValid) {
+          // Emet boolean
           return true;
         } else {
+          // Emet UrlTree
           return this.router.parseUrl('/forbidden');
         }
       })

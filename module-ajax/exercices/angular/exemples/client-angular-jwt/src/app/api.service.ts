@@ -15,7 +15,9 @@ export class ApiService {
   private token: string;
   private baseUrl = 'http://localhost:8080';
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    this.token = this.getToken();
+  }
 
   login(email: string, password: string) {
     return this.httpClient.post<Token>(`${this.baseUrl}/login`, {
@@ -24,7 +26,7 @@ export class ApiService {
     }).pipe(
       map((reponse) => {
         if (reponse.token) {
-          this.token = reponse.token;
+          this.setToken(reponse.token);
           return true;
         } else {
           return false;
@@ -39,7 +41,7 @@ export class ApiService {
   getProfile() {
     return this.httpClient.get<Profile>(`${this.baseUrl}/private/user`, {
       headers: {
-        Authorization: `Bearer ${this.token}`
+        Authorization: `Bearer ${this.getToken()}`
       }
     }).pipe(
       map((reponse) => {
@@ -58,7 +60,7 @@ export class ApiService {
   checkToken() {
     return this.httpClient.get<Error>(`${this.baseUrl}/private/token/verify`, {
       headers: {
-        Authorization: `Bearer ${this.token}`
+        Authorization: `Bearer ${this.getToken()}`
       }
     }).pipe(
       map((response: Error) => {
@@ -75,10 +77,16 @@ export class ApiService {
   }
 
   getToken() {
+    this.token = localStorage.getItem('token');
     return this.token;
   }
 
+  setToken(token) {
+    localStorage.setItem('token', token);
+  }
+
   clearToken() {
+    localStorage.setItem('token', '');
     this.token = '';
   }
 }
