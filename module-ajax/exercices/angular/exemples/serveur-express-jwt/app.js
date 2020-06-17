@@ -33,7 +33,7 @@ app.use(function(request, response, next){
 });
 
 // Déclaration de routes :
-app.get('/login', function(request, response, next){
+app.post('/login', function(request, response, next){
   // Dans la requête on devrait trouver un JSON de la forme :
   /*
   * {
