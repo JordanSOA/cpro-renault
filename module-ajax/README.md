@@ -33,34 +33,34 @@ __Objectif : Comprendre la méthode AJAX__
 - [Exercice 1 (XHR): `GET` et `POST`](./exercices/natif/exercices/exercice-1.md)
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`
   * Nécessite l'API JavaScript [`XmlHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XmlHttpRequest)
-  * Nécessite une API REST avec opérations CRUD sur une entité *Adresses*. On s'intéresse ici particulièrement aux opérations Create et Read.
+  * Nécessite une API REST avec opérations `CRUD` sur une entité *Adresses*. On s'intéresse ici particulièrement aux opérations `Create` et `Read`.
 - [Exercice 2 (`Fetch`): `GET` et `POST`](./exercices/natif/exercices/exercice-2.md)
     * Reprend l'énoncé de l'Exercice 1.
     * Nécessite l'API JavaScript [`Fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-    * Nécessite une API REST avec opérations CRUD sur une entité *Adresses*. On s'intéresse ici particulièrement aux opérations Create et Read
+    * Nécessite une API REST avec opérations `CRUD` sur une entité *Adresses*. On s'intéresse ici particulièrement aux opérations `Create` et `Read`.
 - [Exercice 3 (XHR): Listes dépendantes](./exercices/natif/exercices/exercice-3.md)
     * Peut être réalisé en se basant sur l'exemple de [Serveur basé sur `Express`/`PgSQL`](./exercices/natif/exemples/serveur-express)
     * Nécessite l'API JavaScript [`XmlHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XmlHttpRequest)
-    * Nécessite une API REST avec opérations CRUD sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations Read.
+    * Nécessite une API REST avec opérations `CRUD` sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations `Read`.
 - [Exercice 4 (`Fetch`): Listes dépendantes](./exercices/natif/exercices/exercice-4.md)
     * Reprend l'énoncé de l'Exercice 3.
     * Nécessite l'API JavaScript [`Fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-    * Nécessite une API REST avec opérations CRUD sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations Read. On s'intéresse ici particulièrement aux opérations Create.
+    * Nécessite une API REST avec opérations `CRUD` sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations `Read`.
 - [Exercice 5 (XHR): Formulaires dépendants](./exercices/natif/exercices/exercice-5.md)
     * Peut être réalisé en se basant sur l'exemple de [Serveur basé sur `Express`/`PgSQL`](./exercices/natif/exemples/serveur-express)
     * Nécessite l'API JavaScript [`XmlHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XmlHttpRequest)
-    * Nécessite une API REST avec opérations CRUD sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations Create.
+    * Nécessite une API REST avec opérations `CRUD` sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations `Create`.
 - [Exercice 6 (`Fetch`): Formulaires dépendants](./exercices/natif/exercices/exercice-6.md)
     * Reprend l'énoncé de l'Exercice 5.
     * Nécessite l'API JavaScript [`Fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-    * Nécessite une API REST avec opérations CRUD sur des entités Pays, *Régions et Villes*. On s'intéresse ici particulièrement aux opérations Create.
+    * Nécessite une API REST avec opérations `CRUD` sur des entités Pays, *Régions et Villes*. On s'intéresse ici particulièrement aux opérations `Create`.
 - [Exercice 7 (XHR): Cascades de suppression](./exercices/natif/exercices/exercice-7.md)
     * Nécessite l'API JavaScript [`XmlHttpRequest`](https://developer.mozilla.org/en-US/docs/Web/API/XmlHttpRequest)
-    * Nécessite une API REST avec opérations CRUD sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations Delete.
+    * Nécessite une API REST avec opérations `CRUD` sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations `Delete`.
 - [Exercice 8 (`Fetch`): Cascades de suppression](./exercices/natif/exercices/exercice-8.md)
     * Reprend l'énoncé de l'Exercice 7.
     * Nécessite l'API JavaScript [`Fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-    * Nécessite une API REST avec opérations CRUD sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations Delete.
+    * Nécessite une API REST avec opérations `CRUD` sur des entités *Pays*, *Régions* et *Villes*. On s'intéresse ici particulièrement aux opérations `Delete`.
 
 *A utiliser avec une API REST développée par ailleurs.*
 
@@ -121,26 +121,35 @@ __Objectif : Combiner les *Observables* avec la méthode AJAX__
     ou l'exemple de [serveur basé sur Express/PgSQL](./exercices/rxjs/exemples/serveur-express)
     fourni.
   * Nécessite l'API RxJS [`ajax`](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
-  * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
-    On s'intéresse ici particulièrement aux opérations Create et Read.
+  * Nécessite une API REST avec opérations `CRUD` sur une entité *Personnes* et une entité *Adresses*.
+    On s'intéresse ici particulièrement aux opérations `Create` et `Read`.
 
 - [Exercice 2 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-02) : Créer une *personne* à partir d'une adresse *existante* récupérée à l'aide d'un champ d'"*autocompletion*".
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`.
   * Nécessite l'API RxJS [`ajax`](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
-  * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
-    On s'intéresse ici particulièrement aux opérations Create et Read.
+  * Nécessite une API REST avec opérations `CRUD` sur une entité *Personnes* et une entité *Adresses*.
+    On s'intéresse ici particulièrement aux opérations `Create` et `Read`.
 
 - [Exercice 3 (avec `RxJS`): `GET` et `POST`](./exercices/rxjs/exercices/exercice-03) : Créer une *personne* à partir d'une adresse *existante* récupérée à l'aide d'un champ d'"*autocompletion*" __ou__ création d'une nouvelle adresse.
   * Nécessite le serveur basé sur `Spring` codé en `Java` avec votre formateur `Java`.
   * Nécessite l'API RxJS [`ajax`](https://rxjs-dev.firebaseapp.com/api/ajax/ajax)
-  * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
-    On s'intéresse ici particulièrement aux opérations Create et Read.
+  * Nécessite une API REST avec opérations `CRUD` sur une entité *Personnes* et une entité *Adresses*.
+    On s'intéresse ici particulièrement aux opérations `Create` et `Read`.
 
 ---
 
 ## Exercices avec Angular et le service HttpClient
 
----
+### Exemples :
+
+* [Clients basé sur `Angular`](./exercices/angular/exemples/clients)
+* [Serveurs basé sur `Express`/`PgSQL`](./exercices/angular/exemples/serveurs)
+  * *Vous avez besoin d'une base de données pour le faire fonctionner*. Les codes
+  `sql` de [création de base de données pour chaque serveur sont disponibles ici](./exercices/angular/serveurs/databases).
+  * Pour utiliser les scripts de création  SQL  (qui vont avec chaque serveur Express)
+    et recréer une base de données à partir de ces  fichiers :
+    - `c:\Program Files\PostgreSQL\12\bin\psql.exe -U postgres -W -f "c:\chemin\vers\fichier.sql"`
+    - `psql` est un utilitaire en ligne de commande de PostgreSQL.
 
 ### Enoncés :
 
@@ -151,8 +160,8 @@ __Objectif : Utiliser le service *HttpClient* de Angular basé sur RxJS et s'app
     ou l'exemple de [serveur basé sur Express/PgSQL](./exercices/rxjs/exemples/serveur-express)
     fourni dans la partie RxJS.
   * Nécessite le service [`HttpClient`](https://angular.io/guide/http) de `Angular`.
-  * Nécessite une API REST avec opérations CRUD sur une entité *Personnes* et une entité *Adresses*.
-    On s'intéresse ici particulièrement aux opérations Create et Read.
+  * Nécessite une API REST avec opérations `CRUD` sur une entité *Personnes* et une entité *Adresses*.
+    On s'intéresse ici particulièrement aux opérations `Create` et `Read`.
 
 ---
 
