@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice A1
+# Angular : Les expressions - Exercice A1
 
 
 ## Préparation

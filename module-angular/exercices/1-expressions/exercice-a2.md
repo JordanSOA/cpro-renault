@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice A2 - L'interpolation (tableaux et objets)
+# Angular : Les expressions - Exercice A2 - L'interpolation (tableaux et objets)
 
 
 ## Préparation

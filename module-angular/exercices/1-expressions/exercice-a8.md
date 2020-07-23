@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice a8 - les filtres
+# Angular : Les expressions - Exercice a8 - les filtres
 
 
 ## Préparation

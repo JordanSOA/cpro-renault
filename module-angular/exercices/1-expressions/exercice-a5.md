@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice A5 - la directive NgFor
+# Angular : Les expressions - Exercice A5 - la directive NgFor
 
 
 ## Préparation

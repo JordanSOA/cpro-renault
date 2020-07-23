@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice A7 - les références de template
+# Angular : Les expressions - Exercice A7 - les références de template
 
 
 ## Préparation

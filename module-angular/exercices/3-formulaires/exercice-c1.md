@@ -1,4 +1,4 @@
-# Angular : les formulaires - Exercice C1 - `NgModel` et `ngSubmit`
+# Angular : Les formulaires - Exercice C1 - `NgModel` et `ngSubmit`
 
 
 ## Préparation
