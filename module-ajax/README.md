@@ -145,7 +145,7 @@ __Objectif : Combiner les *Observables* avec la méthode AJAX__
 * [Clients basé sur `Angular`](./exercices/angular/exemples/clients)
 * [Serveurs basé sur `Express`/`PgSQL`](./exercices/angular/exemples/serveurs)
   * *Vous avez besoin d'une base de données pour le faire fonctionner*. Les codes
-  `sql` de [création de base de données pour chaque serveur sont disponibles ici](./exercices/angular/serveurs/databases).
+  `sql` de [création de base de données pour chaque serveur sont disponibles ici](./exercices/angular/databases).
   * Pour utiliser les scripts de création  SQL  (qui vont avec chaque serveur Express)
     et recréer une base de données à partir de ces  fichiers :
     - `c:\Program Files\PostgreSQL\12\bin\psql.exe -U postgres -W -f "c:\chemin\vers\fichier.sql"`
