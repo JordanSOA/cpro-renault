@@ -1,4 +1,4 @@
-# Exercices de découverte de RxJS
+# Formation : Module RxJS
 
 ---
 
