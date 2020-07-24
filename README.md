@@ -95,26 +95,27 @@
 
 ---
 
-### [Module Redux](./module-redux)
-
-(*Indicatif*) __Septembre 2020, ...__
-
-* A Venir...
-
----
-
 ### (__NEW__ !) [Module React](./module-react)
 
 *(En Cours...)* __Juillet 2020, ...__
 
 * Comprendre les principes généraux de fonctionnement de React;
-* Comprendre et savoir écrire du JSX pour créer des élèments du Virtual DOM;
+* Comprendre et savoir écrire du JSX pour créer des éléments du Virtual DOM;
 * Savoir créer un Composant sous la forme de "classe" ou de fonction;
 * Connaître le cycle de vie d'un composant et savoir gérer les évènements;
 * Savoir distinguer et utiliser le `state`, les `props` et les *hooks*;
 * Savoir créer des formulaire et gérer des formulaires avec Formik;
 * Savoir créer un routage et une navigation fonctionnelle avec React Router;
 * ...
+
+---
+
+
+### [Module Redux](./module-redux)
+
+(*Indicatif*) __Septembre 2020, ...__
+
+* A Venir...
 
 ---
 

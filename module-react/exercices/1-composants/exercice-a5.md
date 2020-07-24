@@ -1,11 +1,10 @@
-# Angular : Les expressions - Exercice A6 - la directive NgIf
+# React : Le JSX et les composants - Exercice A5 - les affichages conditionnels
 
 
 ## Préparation
-Créez un nouveau composant nommé "exercice-a6" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
+- Créez un composant nommé "ExerciceA5" dans le dossier `src/components/ExerciceA5`.
 
-Pour afficher ce composant, ajoutez le sélecteur correspondant dans le template du composant principal (`src/app/app.component.html`).
-
+Pour afficher ce composant, ajoutez le sélecteur correspondant dans le JSX du composant principal (`src/App.js`) et n'oubliez pas d'importer le composant dans ce fichier.
 
 ## Introduction
 
