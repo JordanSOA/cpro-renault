@@ -7,9 +7,10 @@
 # [Exercices](./exercices)
 
 * [JSX et les composants](./exercices/1-composants)
-* (A venir...) [Les évènements](./exercices/2-evenements)
-* (A venir...) [Les Formulaires avec Formik](./exercices/3-formulaires)
-* (A venir...) [Le Routage avec React Router](./exercices/4-routage)
+* (A venir...) [`state` et `props`](./exercices/1-state-et-props)
+* (A venir...) [Les évènements](./exercices/3-evenements)
+* (A venir...) [Les Formulaires avec Formik](./exercices/4-formulaires)
+* (A venir...) [Le Routage avec React Router](./exercices/5-routage)
 
 ---
 

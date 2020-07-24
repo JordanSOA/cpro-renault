@@ -3,30 +3,68 @@
 ## Préparation
 - Créez un composant nommé "ExerciceA6" dans le dossier `src/components/ExerciceA6`.
 
-Pour afficher ce composant, ajoutez le sélecteur correspondant dans le JSX du composant principal (`src/App.js`) et n'oubliez pas d'importer le composant dans ce fichier.
+Pour afficher ce composant, ajoutez le sélecteur correspondant dans le JSX du
+composant principal (`src/App.js`) et n'oubliez pas d'importer le composant dans
+ce fichier.
 
 ## Introduction
-Avec les références de template on obtient une référence à l'élément HTML qui porte la référence, on peut donc accéder à toutes les propriétés de cet élément HTML.
+Avec les références, en JSX, on obtient une référence à l'élément HTML qui porte
+la référence, on peut donc accéder à toutes les propriétés de cet élément HTML.
 
-``` html
-<input type="text" name="nom" #inputElementRef>
-{{ inputElementRef.name }} <!-- Affichera "nom" qui est la valeur de l'attribut "name" qui est une propriété de l'input (objet DOM) -->
+Pour utiliser les référence, on doit déclarer 1 propriété du composant qui
+contient l'objet fourni par la méthode `React.createRef()`. L'objet fourni par
+cette méthode contient une propriété `current` qui contiendra 1 référence à
+l'élément HTML associé.
+
+__Attention__, on ne peut accéder à cet élément HTML qu'une fois que le Virtual
+DOM a été utilisé par React pour mettre à jour le DOM. Donc on ne peut pas
+utiliser directement le références dans des expressions au sein du JSX. Pour
+utiliser une référence on passera impérativement par un gestionnaire d'évènement.
+
+Par exemple :
+
+Dans le constructeur du composant on écrit :
+``` jsx
+contructor() {
+  // propriété du composant
+  this.reference = React.createRef();
+}
+```
+Et dans la méthode `render` :
+
+Si on écrit :
+``` jsx
+<input type="text" name="nom" ref={this.reference}/>
+{ /* Le DOM n'existe pas encore, le JSX permet de déclarer le DOM Virtuel */ }
+{ this.reference.current.name }
+{ /* Cette instruction plante, this.reference.current contient null */ }
 ```
 
-**Note :** Le nom de la référence est une variable valide dans le contexte du template. Le nom de cette variable doit être unique poour ne pas entrer en conflit avec d'autres références dand le même template.
+__PLANTE !!!__ Si on essaie d'utiliser la référence directement dans le JSX,
+React produit une erreur.
 
-**Note :** Les références de template peuvent aussi pointer vers des directives (comme `ngModel`) qui fournissent un contenu différent de l'élément HTML.
+En revanche, on peut écrire :
+``` jsx
+<input onClick={ () => {
+  /**
+  * Ce code sera exécuté lorsque l'utilisateur cliquera sur l'élèment.
+  * L'élèment sera donc bel et bien créé dans DOM lorsque cette instruction
+  * se declenchera.
+  */
+  window.alert(this.reference.current.name);
+} } type="text" name="nom" ref={this.reference}/>
+```
 
 ### Documentation
-- Guide : [les références de template (_`template reference variable`_)](https://angular.io/guide/template-syntax#template-reference-variables-var)
+- Guide : [les références et le DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 
 ## Partie 1
 Créez un élément `<h2>` qui contient du texte et qui a un attribut `title` contenant également du texte.
 
-Donnez une référence de template à cet élément `<h2>` et affichez en dessous, en utilisant les propriétés DOM correspondantes :
-- le contenu texte du `<h2>`
-- le contenu de l'attribut `title` du `<h2>`
+Donnez une référence à cet élément `<h2>` et en utilisant les propriétés DOM correspondantes :
+- Affichez au survol du `<h2>`, le contenu texte du `<h2>` dans la console.
+- Affichez au click le contenu de l'attribut `title` du `<h2>` dans la console.
 
 ---
 

@@ -2,7 +2,10 @@
 
 ## Méthodologie
 
-Pour chaque exercice, les sections utiles de la documentation sont indiquées soit en introduction, soit dans le cadre d'une partie spécifique. Les exercices sont construits de façon progressive et chaque nouvel exercice peut faire appel à des notions vues dans les précédents.
+Pour chaque exercice, les sections utiles de la documentation sont indiquées soit
+en introduction, soit dans le cadre d'une partie spécifique. Les exercices sont
+construits de façon progressive et chaque nouvel exercice peut faire appel à des
+notions vues dans les précédents.
 
 
 ## Préparation
@@ -15,7 +18,8 @@ create-react-app exercices
 ``` bash
 npm start
 ```
-- Créez un composant nommé "ExerciceA0" dans le dossier `src/components/ExerciceA0`. Le fichier dans lequel se trouve le code du composant s'appelle
+- Créez un composant nommé "ExerciceA0" dans le dossier `src/components/ExerciceA0`.
+  Le fichier dans lequel se trouve le code du composant s'appelle
 `index.js`
 
 
@@ -24,12 +28,15 @@ npm start
 La façon la plus simple d'afficher une la valeur d'une propriété d'un élément du
 DOM Virtuel dans le JSX est d'utiliser une expression valide en JavaScript.
 
-Pour écrire une expression valide, écrivez le nom d'une variable (définie dans la fonction `render`), dans le JSX retourné, entouré d'accolades simples :
+Pour écrire une expression valide, écrivez le nom d'une variable (définie dans la
+fonction `render`), dans le JSX retourné, entouré d'accolades simples :
 <br>
 ``` jsx
 { maVariable }
 ```
 
+__Attention__, les blocs conditionnel ou les boucles ne font pas partie des
+expressions.
 
 ### Documentation
 
@@ -42,11 +49,14 @@ Pour écrire une expression valide, écrivez le nom d'une variable (définie dan
 
 - Importez votre composant au début du fichier correspondant au composant principal (`App.js`).
 - Videz entièrement le JSX retourné par la méthode `render` du composant principal.
-- Dans la méthode `render` de votre composant principal, dans le JSX retourné insérez l'élément React correspondant au composant ExerciceA0 que vous avez créé (pseudo-balise `<ExerciceA0/>`).
+- Dans la méthode `render` de votre composant principal, dans le JSX retourné insérez
+  l'élément React correspondant au composant ExerciceA0 que vous avez créé
+  (pseudo-balise `<ExerciceA0/>`).
 - Videz entièrement le JSX retourné par la méthode `render` de votre composant
 ExerciceA0.
 - Dans la méthode `render` de votre composant, créez une nouvelle constante
-`titre` contenant le texte "Exercices React" et affichez-la dans dans le JSX en tant que contenu d'une balise `<h1>`.
+  `titre` contenant le texte "Exercices React" et affichez-la dans dans le JSX en
+  tant que contenu d'une balise `<h1>`.
 - Vérifiez que votre composant principal entraîne l'affichage de votre composant.
 
 ---
