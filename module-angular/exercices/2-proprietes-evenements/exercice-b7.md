@@ -1,4 +1,4 @@
-# Angular : les liaisons - Exercice B7 - la directive `NgStyle`
+# Angular : Les liaisons - Exercice B7 - la directive `NgStyle`
 
 
 ## Préparation

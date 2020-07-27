@@ -1,4 +1,4 @@
-# Angular : les liaisons - Exercice B2 - la directive `NgClass`
+# Angular : Les liaisons - Exercice B2 - la directive `NgClass`
 
 
 ## Préparation

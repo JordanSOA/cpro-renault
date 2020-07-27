@@ -1,8 +1,8 @@
-# Angular : les expressions - Exercice A5 - la directive NgFor
+# Angular : Les expressions - Exercice A5 - la directive NgFor
 
 
 ## Préparation
-Créez un nouveau composant nommé "exercice-a4" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
+Créez un nouveau composant nommé "exercice-a5" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
 
 Pour afficher ce composant, ajoutez le sélecteur correspondant dans le template du composant principal (`src/app/app.component.html`).
 
@@ -17,11 +17,11 @@ La directive `NgFor` permet de répéter un élément du DOM pour chaque éléme
 
 
 ## Partie 1
-Créez une nouvelle propriété « classe » qui est un objet avec des propriétés définisant votre classe :
+Créez une nouvelle propriété « classe » qui est un objet avec des propriétés définissant votre classe :
 - Son nom, qui est une chaîne de caractère,
 - Sa spécialité, qui est une chaîne de caractère,
 - La liste des inscrits, qui est un tableau contenant au moins 3 objets représentant des élèves.
-  Chqaue élève possède les caractéristiques suivantes :
+  Chaque élève possède les caractéristiques suivantes :
   - Son prénom, qui est une chaîne de caractère;
   - Son nom, qui est une chaîne de caractère;
   - Son âge, qui est un nombre.

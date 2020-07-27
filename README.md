@@ -42,7 +42,7 @@
 
 ### [Module ES2018/TypeScript](./module-es2018-typescript)
 
-*(En Cours..)* __Janvier 2020, Février 2020, Mars 2020__
+*(Clos)* __Janvier 2020, Février 2020, Mars 2020__
 
 * Maîtriser les sucres syntaxiques de l'ES2018;
 * Comprendre les principes d'une architecture modulaire en front;
@@ -63,7 +63,7 @@
 
 ---
 
-### [Module RxJS](./module-rxjs)
+### (__NEW__ !) [Module RxJS](./module-rxjs)
 
 *(En Cours...)* __Mars 2020, Avril 2020, ...__
 
@@ -89,23 +89,31 @@
 
 ### [Module Tests Unitaires](./module-tests-unitaires)
 
-(*Indicatif*) __Juin 2020, Juillet 2020, ...__
+(*Indicatif*) __Août 2020, ...__
 
 * A Venir...
 
 ---
+
+### (__NEW__ !) [Module React](./module-react)
+
+*(En Cours...)* __Juillet 2020, ...__
+
+* Comprendre les principes généraux de fonctionnement de React;
+* Comprendre et savoir écrire du JSX pour créer des éléments du Virtual DOM;
+* Savoir créer un Composant sous la forme de "classe" ou de fonction;
+* Connaître le cycle de vie d'un composant et savoir gérer les évènements;
+* Savoir distinguer et utiliser le `state`, les `props` et les *hooks*;
+* Savoir créer des formulaire et gérer des formulaires avec Formik;
+* Savoir créer un routage et une navigation fonctionnelle avec React Router;
+* ...
+
+---
+
 
 ### [Module Redux](./module-redux)
 
 (*Indicatif*) __Septembre 2020, ...__
-
-* A Venir...
-
----
-
-### [Module React](./module-react)
-
-(*Indicatif*) __Octobre 2020, ...__
 
 * A Venir...
 

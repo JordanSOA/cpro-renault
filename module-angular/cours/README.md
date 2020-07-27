@@ -4,7 +4,11 @@
 
 ## Demo
 
-* [Exemple 01](./exemple01)
+* [Exemple 01 : Angular CLI, Directives et Composants](./exemple01)
+* [Exemple 02 : Composants, Liaison de données, Formulaires pilotés par le Template](./exemple02)
+* [Exemple 03 : Composants, Services, Injections de Dépendances, Routeur](./exemple03)
+* [Exemple 04 : Composant, Routeur, Gardes, service HttpClient](./exemple04)
+* [Exemple 05 : Routeur, Gardes](./exemple05)
 
 ## Cours Angular
 

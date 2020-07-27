@@ -1,4 +1,4 @@
-# Angular : les liaisons - Exercice B6 - La liaison de propriété (booléens)
+# Angular : Les liaisons - Exercice B6 - La liaison de propriété (booléens)
 
 
 ## Préparation

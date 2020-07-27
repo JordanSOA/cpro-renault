@@ -1,4 +1,4 @@
-# Angular : les liaisons - Exercice B1 - la liaison de propriété (_property binding_)
+# Angular : Les liaisons - Exercice B1 - la liaison de propriété (_property binding_)
 
 
 ## Préparation

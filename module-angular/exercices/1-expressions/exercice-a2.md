@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice A2 - L'interpolation (tableaux et objets)
+# Angular : Les expressions - Exercice A2 - L'interpolation (tableaux et objets)
 
 
 ## Préparation
@@ -20,12 +20,12 @@ L'interpolation consiste à évaluer l'expression entres accolades et à affiche
 
 
 ## Partie 1
-Dans le composant, créez une propriété `promotions`, de type tableau, qui contient 5 éléments numériques qui sont les 5 dernières années (2015 à 2019).
+Dans le composant, créez une propriété `promotions`, de type tableau, qui contient 5 éléments numériques qui sont les 5 dernières années (2018 à 2022).
 À l'aide d'une expression affichez votre année de promotion dans un paragraphe du template.
 
 
 ## Partie 2
-Créez une nouvelle propriété « classe » qui est un objet avec des propriétés définisant votre classe :
+Créez une nouvelle propriété « classe » qui est un objet avec des propriétés définissant votre classe :
 - Son nom, qui est une chaîne de caractère,
 - Sa spécialité, qui est une chaîne de caractère,
 - Son nombre d'inscrits, qui est un nombre

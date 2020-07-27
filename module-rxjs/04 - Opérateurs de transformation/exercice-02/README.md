@@ -21,7 +21,7 @@ const observableFinal = observableInitial.pipe(
 );
 ```
 
-* Illustration  du fonctionnement (à l'aide d'un *Marble Diagram*) :
+* Illustration du fonctionnement de `pluck` (à l'aide d'un *Marble Diagram*) :
 
     ```
     observableA (Observable initial) :
@@ -37,11 +37,56 @@ Ci-après la [Documentation pour l'opérateur `pluck`](https://rxjs-dev.firebase
 
 ## Objectif
 
-A Venir
+Utiliser `pluck` pour extraire une information d'un objet...
 
 ## Enoncé
 
-A Venir
+Soit l'*Observable* suivant :
+
+```
+const monObservable = of({
+  e: () => {
+    alert(this.t);
+  },
+  r: true,
+  t: 'Ceci est un texte dans un objet',
+  y: [{
+    u: {
+      ' ': {
+        ar: {
+          e: {
+            tho: false,
+            the: {
+              ' best': 'Bravo !'
+            },
+            thi: true
+          }
+        },
+        ab: 150
+      }
+    }
+  },{
+    e: [() => {
+        alert('Vous êtes ici !');
+    }, true],
+    r: false,
+    t: function(){
+        this.y = {
+            e:() => {
+                alert('Ou suis je ? Qui suis je ?');
+            }
+        };
+        alert('Desormais ma propriété y contient un objet');
+    }
+  },{
+    nothing: 'here'
+  }]
+});
+```
+
+En utilisant uniquement la méthode `pipe` et l'opérateur `pluck` (en 1 ou plusieurs
+fois si vous le souhaitez), faites en sorte qu'en souscrivant à `monObservable`
+la valeur reçue par l'*Observer* soit `Bravo !`.
 
 ---
 

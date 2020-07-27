@@ -1,4 +1,4 @@
-# Angular : les formulaires - Exercice 1 - la directive `NgModel` et les références de template
+# Angular : Les formulaires - Exercice C2 - la directive `NgModel` et les références de template
 
 
 ## Préparation
@@ -13,14 +13,14 @@ Il existe 2 façons de gérer les formulaires dans Angular :
 Les formulaires pilotés par le template sont utiles pour ajouter un formulaire simple à une application, tel qu'un formulaire d'inscription à une liste de diffusion. Ils sont faciles à ajouter à une application, mais ils ne sont pas aussi évolutifs que les formulaires réactifs. Si vous avez des exigences de base et une logique pouvant être gérées uniquement dans le template, utilisez des formulaires pilotés par le template.
 - [Les formulaires "réactifs"](https://angular.io/guide/reactive-forms). Les formulaires réactifs sont plus robustes : ils sont plus évolutifs, réutilisables et testables. Si les formulaires constituent un élément clé de votre application ou si vous utilisez déjà des modèles réactifs pour générer votre application, utilisez des formulaires réactifs.
 
-Dans cet exercice nous allons utiliser un formulaire piloté par le template pour découvrir l'utilisation des formulaire dans Angular avec la directive `NgModel`.
+Dans cet exercice nous allons utiliser un formulaire piloté par le template pour découvrir l'utilisation des formulaires dans Angular avec la directive `NgModel`.
 
 
 ## Documentation
 - [Description de `NgForm`](https://angular.io/api/forms/NgForm#description).
   - [l'événement `ngSubmit`](https://angular.io/api/forms/NgForm#listening-for-form-submission).
 - [`NgModel`](https://angular.io/api/forms/NgModel).
-- Guide : [Les formulaires piloté par le template](https://angular.io/guide/forms).
+- Guide : [Les formulaires pilotés par le template](https://angular.io/guide/forms).
 - Guide : [Introduction aux formulaires dans Angular](https://angular.io/guide/forms-overview).
 - Guide : [Liaison de données dans les 2 sens](https://angular.io/guide/template-syntax#two-way-binding-)
 - Guide : [La validation de formulaire](https://angular.io/guide/form-validation)
@@ -28,7 +28,7 @@ Dans cet exercice nous allons utiliser un formulaire piloté par le template pou
 
 
 ## Partie 1
-Dans la classe du composant Créez une propriété `utilisateur` qui est un objet possédant les propriétés suivantes :
+Dans la classe du composant, créez une propriété `utilisateur` qui est un objet possédant les propriétés suivantes :
 
 - Nom, de type texte,
 - Prénom, de type texte,
@@ -42,7 +42,7 @@ Dans le template, créez un formulaire comportant 4 champs qui correspondent aux
 - Le champ prénom doit comporter au moins 2 caractères
 - Le champ e-mail est obligatoire
 
-N'oubliez pas de spécifier un attribut `name` pour chacun de ces champs : Angular utilise cet attribnut gérer la validation du champ.
+N'oubliez pas de spécifier un attribut `name` pour chacun de ces champs : Angular utilise cet attribut pour gérer la validation du champ.
 
 Utilisez la directive `NgModel` pour lier chaque champ à une propriété de votre objet `utilisateur`.
 
@@ -50,7 +50,7 @@ Pour chaque champ créez un paragraphe de texte et utilisez une expression pour 
 
 
 ## Partie 3
-Observez, dans l'inspecteur du navigateur, les différentes classes associées à chaque champ lorsque vous modifiez leur valeur ou lorsque vous sortez du champ. Ces classes sont automatiquement ajoutées par Angular en fonction de l'état du champ (valide, invalide, modifé, etc.) et sont pratiques pour styler votre formulaire en fonction de son état.
+Observez, dans l'inspecteur du navigateur, les différentes classes associées à chaque champ lorsque vous modifiez leur valeur ou lorsque vous sortez du champ. Ces classes sont automatiquement ajoutées par Angular en fonction de l'état du champ (valide, invalide, modifié, etc.) et sont pratiques pour styler votre formulaire en fonction de son état.
 
 Faites en sorte que lorsqu'un champ est valide, sa couleur de fond passe en vert et lorsqu'il est invalide, sa couleur de fond passe en rouge.
 
@@ -82,7 +82,7 @@ Manipulez votre formulaire et observez ces propriétés en les affichant via une
 
 Ajoutez un input de type `submit`.
 
-Lors de la soumission du formulaire, exécutez une fonction qui recevra l'état du fomulaire.
+Lors de la soumission du formulaire, exécutez une fonction qui recevra l'état du formulaire.
 
 Si le formulaire est la valide, la fonction doit ajouter les informations du formulaire à une liste d'utilisateurs (créez une nouvelle propriété de classe, nommée `listeUtilisateurs`).
 

@@ -1,4 +1,4 @@
-# Angular : les liaisons - Exercice B4 - la liaison d'événements (_event binding_)
+# Angular : Les liaisons - Exercice B4 - la liaison d'événements (_event binding_)
 
 
 ## Préparation

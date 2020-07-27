@@ -1,4 +1,4 @@
-# Angular : les liaisons - Exercice B5 - `$event`
+# Angular : Les liaisons - Exercice B5 - `$event`
 
 
 ## Préparation

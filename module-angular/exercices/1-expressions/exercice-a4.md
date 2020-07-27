@@ -1,4 +1,4 @@
-# Angular : les expressions - Exercice A4 - La directive `NgModel`
+# Angular : Les expressions - Exercice A4 - La directive `NgModel`
 
 
 ## Préparation

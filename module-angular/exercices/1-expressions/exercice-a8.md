@@ -1,8 +1,8 @@
-# Angular : les expressions - Exercice a8 - les filtres
+# Angular : Les expressions - Exercice A8 - les filtres
 
 
 ## Préparation
-Créez un nouveau composant nommé "exercice-a7" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
+Créez un nouveau composant nommé "exercice-a8" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
 
 Pour afficher ce composant, ajoutez le sélecteur correspondant dans le template du composant principal (`src/app/app.component.html`).
 

@@ -1,8 +1,8 @@
-# Angular : les expressions - Exercice A6 - la directive NgIf
+# Angular : Les expressions - Exercice A6 - la directive NgIf
 
 
 ## Préparation
-Créez un nouveau composant nommé "exercice-a5" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
+Créez un nouveau composant nommé "exercice-a6" dans le dossier `src/app/exercices/1-expressions/`, en utilisant le [CLI Angular](https://angular.io/cli).
 
 Pour afficher ce composant, ajoutez le sélecteur correspondant dans le template du composant principal (`src/app/app.component.html`).
 
