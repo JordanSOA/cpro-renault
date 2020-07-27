@@ -1,0 +1,32 @@
+<h2>Inscription avec formulaire piloté par le template</h2>
+<form #templateDrivenForm="ngForm" (ngSubmit)="register(templateDrivenForm)">
+  <p>
+    <label for="firstname_tdf">Prénom : </label>
+    <input [(ngModel)]="user.firstname" #firstname="ngModel" name="firstname" id="firstname_tdf" type="text" autocomplete="given-name" required minlength="1"/>
+    <span *ngIf="firstname.touched && firstname.invalid"> {{ firstname.errors | json }} </span>
+  </p>
+  <p>
+    <label for="lastname_tdf">Nom : </label>
+    <input [(ngModel)]="user.lastname" #lastname="ngModel" name="lastname" id="lastname_tdf" type="text" autocomplete="family-name" required minlength="1"/>
+    <span *ngIf="lastname.touched && lastname.invalid"> {{ lastname.errors | json }} </span>
+  </p>
+  <p>
+    <label for="birthdate_tdf">Date : </label>
+    <input [(ngModel)]="user.birthdate" #birthdate="ngModel" name="birthdate" id="birthdate_tdf" type="date" autocomplete="bday" required />
+    <span *ngIf="birthdate.touched && birthdate.invalid"> {{ birthdate.errors | json }} </span>
+  </p>
+  <p>
+    <label for="email_tdf">E-mail : </label>
+    <input [(ngModel)]="user.email" #email="ngModel" name="email" id="email_tdf" type="email" autocomplete="email" minlength="3" required />
+    <span *ngIf="email.touched && email.invalid"> {{ email.errors | json }} </span>
+  </p>
+  <p>
+    <label for="password_tdf">Mot de passe : </label>
+    <input [(ngModel)]="user.password" #password="ngModel"  name="password" id="password_tdf" type="password" autocomplete="new-password" minlength="6" pattern="[0-9A-Za-z]+" required />
+    <span *ngIf="password.touched && password.invalid"> {{ password.errors | json }} </span>
+  </p>
+  <p>
+    <input [disabled]="templateDrivenForm.form.invalid" type="submit" value="Inscription"/>
+  </p>
+  <p *ngIf="registrationHasFailed">L'inscription a échoué. Essayez à nouveau s'il vous plaît.</p>
+</form>

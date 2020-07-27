@@ -1,0 +1,32 @@
+<h2>Inscription avec formulaire réactif</h2>
+<form [formGroup]="formulaireReactif" (ngSubmit)="register()">
+  <p>
+    <label for="firstname_rf">Prénom : </label>
+    <input name="firstname" id="firstname_rf" type="text" formControlName="firstname" autocomplete="given-name"/>
+    <span *ngIf="firstnameAttacheAuComposant.touched && firstnameAttacheAuComposant.invalid"> {{ firstnameAttacheAuComposant.errors | json }} </span>
+  </p>
+  <p>
+    <label for="lastname_rf">Nom : </label>
+    <input name="lastname" id="lastname_rf" type="text" formControlName="lastname" autocomplete="family-name"/>
+    <span *ngIf="lastname.touched && lastname.invalid"> {{ lastname.errors | json }} </span>
+  </p>
+  <p>
+    <label for="birthdate_rf">Date : </label>
+    <input name="birthdate" id="birthdate_rf" type="date" formControlName="birthdate" autocomplete="bday"/>
+    <span *ngIf="formulaireReactif.controls.birthdate.touched && formulaireReactif.controls.birthdate.invalid"> {{ formulaireReactif.controls.birthdate.errors | json }} </span>
+  </p>
+  <p>
+    <label for="email_rf">E-mail : </label>
+    <input name="email" id="email_rf" type="email" formControlName="email" autocomplete="email"/>
+    <span *ngIf="formulaireReactif.controls.email.touched && formulaireReactif.controls.email.invalid"> {{ formulaireReactif.controls.email.errors | json }} </span>
+  </p>
+  <p>
+    <label for="password_rf">Mot de passe : </label>
+    <input name="password" id="password_rf" type="password" formControlName="password" autocomplete="new-password"/>
+    <span *ngIf="formulaireReactif.controls.password.touched && formulaireReactif.controls.password.invalid"> {{ formulaireReactif.controls.password.errors | json }} </span>
+  </p>
+  <p>
+    <input [disabled]="formulaireReactif.invalid" type="submit" value="Inscription"/>
+  </p>
+  <p *ngIf="registrationHasFailed">L'inscription a échoué. Essayez à nouveau s'il vous plaît.</p>
+</form>

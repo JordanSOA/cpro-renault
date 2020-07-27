@@ -1,0 +1,7 @@
+<h1>Connexion</h1>
+<form (submit)="connexion()">
+  <p>E-Mail : <input type="email" name="email" [(ngModel)]="email" required/></p>
+  <p>Mot de Passe : <input type="password" name="password" [(ngModel)]="password" required/></p>
+  <p><input type="submit" value="Connexion"/></p>
+</form>
+<p>{{ message }}</p>
