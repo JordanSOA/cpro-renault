@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>React : En ES6</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      /*
+      * Création d'un élément React pour le DOM Virtuel
+      * <p>
+      *   #text
+      */
+      const type = 'p';
+      const props = {
+        style: {
+          color: 'pink'
+        },
+        title: 'Les bases de React',
+        onClick: function(evt) {
+          window.alert('Cliqué !');
+        },
+        className: 'classe-css-des-paragraphes'
+      };
+      const children = [
+        'Etudions les bases de React'
+      ];
+
+      const elementReact = React.createElement(type, props, ...children);
+
+      /*
+      * Synchronisation de cet élément du DOM Virtuel avec le DOM
+      */
+      const element = elementReact;
+      const container = window.document.getElementById('app');
+      const callback = function(){
+        console.log('Paragraphe inseré dans le DOM par ReactDOM.render()');
+      }
+      ReactDOM.render(element, container, callback);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>React : En ES6</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      /*
+      * Création d'e plusieurs éléments React pour le DOM Virtuel
+      * <div>
+      *   <h1>
+      *     #text
+      *   <p>
+      *     #text
+      */
+
+      // Avant :
+      /*
+      const elementReactDiv = React.createElement('div', {
+        style: {
+          border: '2px solid blue'
+        },
+        className: 'classe-css-de-la-div'
+      }, ...[
+        React.createElement('h1', {
+            style: {
+              color: 'puple'
+            },
+            title: 'Titre des bases de React',
+            onClick: function(evt) {
+              window.alert('Titre Cliqué !');
+            },
+            className: 'classe-css-des-titres'
+          }, ...[
+            'Les bases'
+        ]),
+        React.createElement('p', {
+          style: {
+            color: 'pink'
+          },
+          title: 'Les bases de React',
+          onClick: function(evt) {
+            window.alert('Parapgraphe Cliqué !');
+          },
+          className: 'classe-css-des-paragraphes'
+        }, ...[
+         'Etudions les bases de React'
+        ])
+      ]);
+      */
+
+      // Après
+      class MonComposant extends React.Component {
+        // Méthode obligatoire si le composant est sous forme de "classe"
+        // Méthode du cycle de vie d'un composant React
+        render() {
+          // Définit des propriétés
+          const styleDiv = {
+            border: '2px solid blue'
+          };
+          const classNameDiv= 'classe-css-de-la-div';
+          const styleH1 = {
+            color: 'puple'
+          };
+          const titleH1 = 'Titre des bases de React';
+          const onClickH1 = function(evt) {
+            window.alert('Titre Cliqué !');
+          }
+          const classNameH1 = 'classe-css-des-titres';
+          const styleP = {
+            color: 'pink'
+          };
+          const titleP = 'les bases de React';
+          const onClickP = function(evt) {
+            window.alert('Parapgraphe Cliqué !');
+          };
+          const classNameP = 'classe-css-des-paragraphes';
+
+          // Retourne un élement du dom virtuel
+          return (<div
+          style={ styleDiv }
+          className={ classNameDiv }
+          >
+            <h1 style={ styleH1 }
+                title={ titleH1 }
+                onClick={ onClickH1}
+                className={ classNameH1 }>Les bases</h1>
+            <p style={ styleP }
+              title={ titleP }
+              onClick={ onClickP }
+              className={ classNameP }>Etudions les bases de React</p>
+          </div>)
+        }
+      }
+
+      /*
+      * Synchronisation de cet élément du DOM Virtuel avec le DOM
+      */
+      // Pour utiliser le composant on l'écrit sous la forme d'une "balise"
+      // autofermante.
+      ReactDOM.render(
+        <MonComposant/>,
+        window.document.getElementById('app'),
+        function(){
+          console.log('Div inserée dans le DOM par ReactDOM.render()');
+      });
+    </script>
+  </body>
+</html>

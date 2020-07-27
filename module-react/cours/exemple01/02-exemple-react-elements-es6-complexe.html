@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>React : En ES6</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      /*
+      * Création d'e plusieurs éléments React pour le DOM Virtuel
+      * <div>
+      *   <h1>
+      *     #text
+      *   <p>
+      *     #text
+      */
+      const typeP = 'p';
+      const propsP = {
+        style: {
+          color: 'pink'
+        },
+        title: 'Les bases de React',
+        onClick: function(evt) {
+          window.alert('Parapgraphe Cliqué !');
+        },
+        className: 'classe-css-des-paragraphes'
+      };
+      const childrenP = [
+        'Etudions les bases de React'
+      ];
+
+      const elementReactP = React.createElement(typeP, propsP, ...childrenP);
+
+      const typeH1 = 'h1';
+      const propsH1 = {
+        style: {
+          color: 'puple'
+        },
+        title: 'Titre des bases de React',
+        onClick: function(evt) {
+          window.alert('Titre Cliqué !');
+        },
+        className: 'classe-css-des-titres'
+      };
+      const childrenH1 = [
+        'Les bases'
+      ];
+
+      const elementReactH1 = React.createElement(typeH1, propsH1, ...childrenH1);
+
+      const typeDiv = 'div';
+      const propsDiv = {
+        style: {
+          border: '2px solid blue'
+        },
+        className: 'classe-css-de-la-div'
+      };
+      const childrenDiv = [
+        elementReactH1,
+        elementReactP
+      ];
+
+      const elementReactDiv = React.createElement(typeDiv, propsDiv, ...childrenDiv);
+      /*
+      * Synchronisation de cet élément du DOM Virtuel avec le DOM
+      */
+      const element = elementReactDiv;
+      const container = window.document.getElementById('app');
+      const callback = function(){
+        console.log('Div inserée dans le DOM par ReactDOM.render()');
+      }
+      ReactDOM.render(element, container, callback);
+    </script>
+  </body>
+</html>
